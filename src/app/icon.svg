@@ -1,0 +1,25 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="180" height="180"
+     viewBox="0 0 180 180">
+  <rect width="180" height="180"
+        rx="39" fill="#153A75"/>
+  <path d="M33 59 Q62 49 90 65
+           Q118 49 147 59
+           V127 Q118 117 90 133
+           Q62 117 33 127Z"
+        fill="#FFFFFF"/>
+  <path d="M90 65V133"
+        stroke="#153A75"
+        stroke-width="5"/>
+  <path d="M90 46l5.5 12.5L108 64
+           l-12.5 5.5L90 82
+           l-5.5-12.5L72 64
+           l12.5-5.5Z"
+        fill="#F7C84C"/>
+  <path d="M51 91h24M105 91h24
+           M51 103h24M105 103h24"
+        stroke="#CBDCF3"
+        stroke-width="4"
+        stroke-linecap="round"/>
+</svg>

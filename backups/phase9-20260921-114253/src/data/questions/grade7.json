@@ -1,0 +1,522 @@
+[
+  {
+    "id": "M01",
+    "subject": "Math",
+    "prompt": "What is 3/4 + 1/8?",
+    "options": [
+      "5/8",
+      "7/8",
+      "1/2",
+      "3/8"
+    ],
+    "answer": 1,
+    "explanation": "Convert 3/4 to 6/8. Then add 1/8 to get 7/8."
+  },
+  {
+    "id": "M02",
+    "subject": "Math",
+    "prompt": "What is 15% of 200?",
+    "options": [
+      "15",
+      "20",
+      "30",
+      "45"
+    ],
+    "answer": 2,
+    "explanation": "0.15 multiplied by 200 equals 30."
+  },
+  {
+    "id": "M03",
+    "subject": "Math",
+    "prompt": "If 2x + 5 = 17, what is x?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "11"
+    ],
+    "answer": 1,
+    "explanation": "Subtract 5, then divide 12 by 2."
+  },
+  {
+    "id": "M04",
+    "subject": "Math",
+    "prompt": "Find the area of an 8 cm by 5 cm rectangle.",
+    "options": [
+      "13 cm²",
+      "26 cm²",
+      "40 cm²",
+      "80 cm²"
+    ],
+    "answer": 2,
+    "explanation": "Area equals length multiplied by width."
+  },
+  {
+    "id": "M05",
+    "subject": "Math",
+    "prompt": "Which fraction equals 0.6?",
+    "options": [
+      "1/6",
+      "2/5",
+      "3/5",
+      "5/6"
+    ],
+    "answer": 2,
+    "explanation": "0.6 equals 6/10, which simplifies to 3/5."
+  },
+  {
+    "id": "M06",
+    "subject": "Math",
+    "prompt": "Find the mean of 4, 6, 8, and 10.",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": 1,
+    "explanation": "The sum is 28. Divide by 4 to get 7."
+  },
+  {
+    "id": "M07",
+    "subject": "Math",
+    "prompt": "What is 3 cubed?",
+    "options": [
+      "9",
+      "18",
+      "27",
+      "81"
+    ],
+    "answer": 2,
+    "explanation": "3 cubed means 3 multiplied by 3 multiplied by 3."
+  },
+  {
+    "id": "M08",
+    "subject": "Math",
+    "prompt": "A ratio is 2:3 and the total is 25. What is the first share?",
+    "options": [
+      "5",
+      "10",
+      "15",
+      "20"
+    ],
+    "answer": 1,
+    "explanation": "There are 5 parts. Each part is 5, so 2 parts equal 10."
+  },
+  {
+    "id": "M09",
+    "subject": "Math",
+    "prompt": "How many meters are in 1.5 kilometers?",
+    "options": [
+      "150",
+      "500",
+      "1500",
+      "15000"
+    ],
+    "answer": 2,
+    "explanation": "One kilometer is 1000 meters."
+  },
+  {
+    "id": "M10",
+    "subject": "Math",
+    "prompt": "Twelve pencils cost ₱84. What is the cost of one pencil?",
+    "options": [
+      "₱6",
+      "₱7",
+      "₱8",
+      "₱12"
+    ],
+    "answer": 1,
+    "explanation": "Divide ₱84 by 12."
+  },
+  {
+    "id": "S01",
+    "subject": "Science",
+    "prompt": "What is the change from liquid to gas called?",
+    "options": [
+      "Freezing",
+      "Condensation",
+      "Evaporation",
+      "Melting"
+    ],
+    "answer": 2,
+    "explanation": "Evaporation changes liquid into gas."
+  },
+  {
+    "id": "S02",
+    "subject": "Science",
+    "prompt": "What energy source do plants use for photosynthesis?",
+    "options": [
+      "Sunlight",
+      "Sound",
+      "Wind",
+      "Electricity"
+    ],
+    "answer": 0,
+    "explanation": "Plants capture light energy during photosynthesis."
+  },
+  {
+    "id": "S03",
+    "subject": "Science",
+    "prompt": "What force opposes sliding between surfaces?",
+    "options": [
+      "Gravity",
+      "Friction",
+      "Magnetism",
+      "Buoyancy"
+    ],
+    "answer": 1,
+    "explanation": "Friction resists relative motion between surfaces."
+  },
+  {
+    "id": "S04",
+    "subject": "Science",
+    "prompt": "Which blood cells carry most oxygen in the blood?",
+    "options": [
+      "Platelets",
+      "White cells",
+      "Red cells",
+      "Nerve cells"
+    ],
+    "answer": 2,
+    "explanation": "Red blood cells contain hemoglobin that carries oxygen."
+  },
+  {
+    "id": "S05",
+    "subject": "Science",
+    "prompt": "What mainly causes day and night?",
+    "options": [
+      "Earth's rotation",
+      "Earth's revolution",
+      "The Moon",
+      "Clouds"
+    ],
+    "answer": 0,
+    "explanation": "Earth rotates on its axis, changing which side faces the Sun."
+  },
+  {
+    "id": "S06",
+    "subject": "Science",
+    "prompt": "Which organism is a producer in a grassland?",
+    "options": [
+      "Snake",
+      "Grass",
+      "Hawk",
+      "Frog"
+    ],
+    "answer": 1,
+    "explanation": "Grass produces food through photosynthesis."
+  },
+  {
+    "id": "S07",
+    "subject": "Science",
+    "prompt": "Which method can separate sand from water?",
+    "options": [
+      "Filtration",
+      "Magnetism",
+      "Freezing only",
+      "Distillation only"
+    ],
+    "answer": 0,
+    "explanation": "A filter can retain sand while water passes through."
+  },
+  {
+    "id": "S08",
+    "subject": "Science",
+    "prompt": "A solution with pH 4 is generally...",
+    "options": [
+      "Neutral",
+      "Basic",
+      "Acidic",
+      "Always pure"
+    ],
+    "answer": 2,
+    "explanation": "A pH below 7 indicates acidity."
+  },
+  {
+    "id": "S09",
+    "subject": "Science",
+    "prompt": "Which material is a good electrical conductor?",
+    "options": [
+      "Rubber",
+      "Dry wood",
+      "Plastic",
+      "Copper"
+    ],
+    "answer": 3,
+    "explanation": "Copper allows electric charge to move easily."
+  },
+  {
+    "id": "S10",
+    "subject": "Science",
+    "prompt": "Why can sound not travel through a vacuum?",
+    "options": [
+      "It needs matter to travel",
+      "It needs sunlight",
+      "It only travels upward",
+      "It has no energy"
+    ],
+    "answer": 0,
+    "explanation": "Sound is a mechanical wave that needs a material medium."
+  },
+  {
+    "id": "E01",
+    "subject": "English",
+    "prompt": "She ___ to school every weekday.",
+    "options": [
+      "go",
+      "goes",
+      "going",
+      "gone"
+    ],
+    "answer": 1,
+    "explanation": "A singular third-person subject takes 'goes' in the simple present."
+  },
+  {
+    "id": "E02",
+    "subject": "English",
+    "prompt": "Which word is a synonym of 'rapid'?",
+    "options": [
+      "Slow",
+      "Late",
+      "Fast",
+      "Weak"
+    ],
+    "answer": 2,
+    "explanation": "Rapid means fast or quick."
+  },
+  {
+    "id": "E03",
+    "subject": "English",
+    "prompt": "Which word is an antonym of 'scarce'?",
+    "options": [
+      "Rare",
+      "Limited",
+      "Few",
+      "Abundant"
+    ],
+    "answer": 3,
+    "explanation": "Abundant means plentiful, the opposite of scarce."
+  },
+  {
+    "id": "E04",
+    "subject": "English",
+    "prompt": "Which pronoun replaces 'Maria and I'?",
+    "options": [
+      "They",
+      "We",
+      "She",
+      "Us"
+    ],
+    "answer": 1,
+    "explanation": "Use 'we' when the speaker is part of the subject."
+  },
+  {
+    "id": "E05",
+    "subject": "English",
+    "prompt": "The list of items ___ on the table.",
+    "options": [
+      "are",
+      "were",
+      "is",
+      "be"
+    ],
+    "answer": 2,
+    "explanation": "The subject 'list' is singular, so use 'is'."
+  },
+  {
+    "id": "E06",
+    "subject": "English",
+    "prompt": "It rained heavily, so the game was canceled. What was the cause?",
+    "options": [
+      "The cancellation",
+      "The heavy rain",
+      "The players",
+      "The field"
+    ],
+    "answer": 1,
+    "explanation": "The heavy rain caused the cancellation."
+  },
+  {
+    "id": "E07",
+    "subject": "English",
+    "prompt": "Lena brought an umbrella after seeing dark clouds. What did she expect?",
+    "options": [
+      "Snow",
+      "Rain",
+      "Heat",
+      "Wind only"
+    ],
+    "answer": 1,
+    "explanation": "Dark clouds and an umbrella suggest she expected rain."
+  },
+  {
+    "id": "E08",
+    "subject": "English",
+    "prompt": "A paragraph explains that seedlings need sunlight and water. What is its main idea?",
+    "options": [
+      "How plants grow",
+      "How to cook",
+      "How to travel",
+      "How to paint"
+    ],
+    "answer": 0,
+    "explanation": "The details describe what plants need for growth."
+  },
+  {
+    "id": "E09",
+    "subject": "English",
+    "prompt": "Which sentence has correct punctuation?",
+    "options": [
+      "Where are you going.",
+      "Where are you going?",
+      "where are you going!",
+      "Where are you going,"
+    ],
+    "answer": 1,
+    "explanation": "A direct question ends with a question mark."
+  },
+  {
+    "id": "E10",
+    "subject": "English",
+    "prompt": "They ___ their homework yesterday.",
+    "options": [
+      "finish",
+      "finishes",
+      "finishing",
+      "finished"
+    ],
+    "answer": 3,
+    "explanation": "'Yesterday' calls for the simple past tense."
+  },
+  {
+    "id": "R01",
+    "subject": "Reasoning",
+    "prompt": "What comes next: 2, 4, 8, 16, ...?",
+    "options": [
+      "18",
+      "24",
+      "32",
+      "36"
+    ],
+    "answer": 2,
+    "explanation": "Each number is multiplied by 2."
+  },
+  {
+    "id": "R02",
+    "subject": "Reasoning",
+    "prompt": "Which shape is different from the others?",
+    "options": [
+      "Triangle",
+      "Square",
+      "Circle",
+      "Rectangle"
+    ],
+    "answer": 2,
+    "explanation": "A circle has no straight sides."
+  },
+  {
+    "id": "R03",
+    "subject": "Reasoning",
+    "prompt": "What comes next: A, C, E, G, ...?",
+    "options": [
+      "H",
+      "I",
+      "J",
+      "K"
+    ],
+    "answer": 1,
+    "explanation": "The pattern skips one letter each time."
+  },
+  {
+    "id": "R04",
+    "subject": "Reasoning",
+    "prompt": "You face north and turn right. Which way do you face?",
+    "options": [
+      "West",
+      "South",
+      "East",
+      "North"
+    ],
+    "answer": 2,
+    "explanation": "A right turn from north points east."
+  },
+  {
+    "id": "R05",
+    "subject": "Reasoning",
+    "prompt": "Five identical machines make five items in five minutes. How long for 100 machines to make 100 items?",
+    "options": [
+      "5 minutes",
+      "20 minutes",
+      "100 minutes",
+      "500 minutes"
+    ],
+    "answer": 0,
+    "explanation": "Each machine makes one item in five minutes."
+  },
+  {
+    "id": "R06",
+    "subject": "Reasoning",
+    "prompt": "All roses are flowers. Can we conclude that all flowers are roses?",
+    "options": [
+      "Yes",
+      "No",
+      "Only red flowers",
+      "Only in gardens"
+    ],
+    "answer": 1,
+    "explanation": "The first statement does not say every flower is a rose."
+  },
+  {
+    "id": "R07",
+    "subject": "Reasoning",
+    "prompt": "What day is three days after Tuesday?",
+    "options": [
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "answer": 1,
+    "explanation": "Wednesday is day one, Thursday day two, Friday day three."
+  },
+  {
+    "id": "R08",
+    "subject": "Reasoning",
+    "prompt": "What comes next: 1, 4, 9, 16, ...?",
+    "options": [
+      "20",
+      "24",
+      "25",
+      "32"
+    ],
+    "answer": 2,
+    "explanation": "These are the squares of 1, 2, 3, 4, and 5."
+  },
+  {
+    "id": "R09",
+    "subject": "Reasoning",
+    "prompt": "Ana is taller than Ben. Ben is taller than Carlo. Who is tallest?",
+    "options": [
+      "Ana",
+      "Ben",
+      "Carlo",
+      "Cannot tell"
+    ],
+    "answer": 0,
+    "explanation": "The comparison gives Ana greater height than both."
+  },
+  {
+    "id": "R10",
+    "subject": "Reasoning",
+    "prompt": "If CAT becomes DBU by shifting each letter forward, what does DOG become?",
+    "options": [
+      "EPH",
+      "FQI",
+      "CNE",
+      "EOG"
+    ],
+    "answer": 0,
+    "explanation": "D becomes E, O becomes P, and G becomes H."
+  }
+]

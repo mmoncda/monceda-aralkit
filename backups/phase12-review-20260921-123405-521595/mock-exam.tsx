@@ -1,0 +1,430 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
+import bank from "@/data/questions/grade7.json";
+import {
+  buildSession,
+  gradeSession,
+  SUBJECTS,
+  type Answers,
+  type Question,
+} from "@/lib/reviewer/quiz";
+import styles from "./mock-exam.module.css";
+import { parseSavedMockExam } from "@/lib/reviewer/mock-exam-state";
+
+const QUESTION_BANK = bank as Question[];
+const EXAM_SECONDS = 60 * 60;
+const STORAGE_KEY = "aralkit.mock-exam.v1";
+type Phase = "intro" | "exam" | "result";
+
+function timeLabel(seconds: number) {
+  const minutes = Math.floor(seconds / 60);
+  const remainder = seconds % 60;
+  return `${minutes}:${String(remainder).padStart(2, "0")}`;
+}
+
+export default function MockExam() {
+  const [phase, setPhase] = useState<Phase>("intro");
+  const [hydrated, setHydrated] = useState(false);
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [answers, setAnswers] = useState<Answers>({});
+  const [current, setCurrent] = useState(0);
+  const [remaining, setRemaining] = useState(EXAM_SECONDS);
+
+  const deadline = useRef(0);
+
+  useEffect(() => {
+    // Restore asynchronously to satisfy react-hooks/set-state-in-effect.
+    // Strict Mode cleanup also cancels the first scheduled restore.
+    const task = window.setTimeout(() => {
+      try {
+        const raw = window.localStorage.getItem(STORAGE_KEY);
+
+        if (raw) {
+          const saved = parseSavedMockExam(
+            raw,
+            QUESTION_BANK,
+            Date.now()
+          );
+
+          if (saved) {
+            deadline.current = saved.deadline;
+            setQuestions(saved.questions);
+            setAnswers(saved.answers);
+            setCurrent(saved.current);
+
+            const seconds = Math.max(
+              0,
+              Math.ceil((saved.deadline - Date.now()) / 1000)
+            );
+
+            setRemaining(seconds);
+            setPhase(
+              saved.phase === "result" || seconds === 0
+                ? "result"
+                : "exam"
+            );
+          } else {
+            window.localStorage.removeItem(STORAGE_KEY);
+          }
+        }
+      } catch {
+        // Storage may be blocked; the exam still works.
+      }
+
+      setHydrated(true);
+    }, 0);
+
+    return () => window.clearTimeout(task);
+  }, []);
+
+  useEffect(() => {
+    if (!hydrated) return;
+
+    try {
+      if (phase === "intro") {
+        window.localStorage.removeItem(STORAGE_KEY);
+        return;
+      }
+
+      if (questions.length !== 40) return;
+
+      window.localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify({
+          version: 1,
+          phase,
+          questionIds: questions.map((item) => item.id),
+          answers,
+          current,
+          deadline: deadline.current,
+        })
+      );
+    } catch {
+      // Storage availability does not affect exam use.
+    }
+  }, [hydrated, phase, questions, answers, current]);
+
+  useEffect(() => {
+
+    if (phase !== "exam") return;
+
+    const timer = window.setInterval(() => {
+      const next = Math.max(
+        0,
+        Math.ceil((deadline.current - Date.now()) / 1000)
+      );
+      setRemaining(next);
+
+      if (next === 0) {
+        setPhase("result");
+      }
+    }, 1000);
+
+    return () => window.clearInterval(timer);
+  }, [phase]);
+
+  function startExam() {
+    const selected = buildSession(QUESTION_BANK, 40, "Mixed");
+    setQuestions(selected);
+    setAnswers({});
+    setCurrent(0);
+    setRemaining(EXAM_SECONDS);
+    deadline.current = Date.now() + EXAM_SECONDS * 1000;
+    setPhase("exam");
+  }
+
+  function submitExam() {
+    const unanswered = questions.filter(
+      (question) => answers[question.id] === undefined
+    ).length;
+
+    if (
+      unanswered > 0 &&
+      !window.confirm(
+        `${unanswered} question(s) unanswered. Submit anyway?`
+      )
+    ) {
+      return;
+    }
+
+    setPhase("result");
+  }
+
+  const answered = questions.filter(
+    (question) => answers[question.id] !== undefined
+  ).length;
+
+  const question = questions[current];
+  const result =
+    phase === "result" ? gradeSession(questions, answers) : null;
+
+  return (
+    <main className={styles.shell}>
+      <Link href="/reviewer/" className={styles.back}>
+        ← Grade 7 Reviewer
+      </Link>
+
+      <p className={styles.eyebrow}>AralKit PH · Grade 7</p>
+      <h1>Mock Exam</h1>
+      <p className={styles.lead}>
+        Original practice questions. Not an official Manila Science
+        High School admission examination.
+      </p>
+
+      {phase === "intro" && hydrated && (
+        <section className={styles.card}>
+          <h2>Exam instructions</h2>
+          <div className={styles.stats}>
+            <span><strong>40</strong> questions</span>
+            <span><strong>60</strong> minutes</span>
+            <span><strong>4</strong> subjects</span>
+          </div>
+
+          <p>
+            Mathematics, Science, English, and Reasoning each have
+            10 randomized questions. Select one answer per question.
+            You can move backward and forward before submitting.
+          </p>
+          <p>
+            Your exam submits automatically when the timer reaches
+            zero. Results include scores by subject and explanations.
+          </p>
+
+          <button
+            type="button"
+            className={styles.primary}
+            onClick={startExam}
+          >
+            Start mock exam
+          </button>
+        </section>
+      )}
+
+      {phase === "exam" && question && (
+        <>
+          <section className={styles.card}>
+            <div className={styles.top}>
+              <strong>
+                Question {current + 1} of {questions.length}
+              </strong>
+              <strong
+                className={remaining <= 300 ? styles.urgent : ""}
+                role="timer"
+                aria-label="Time remaining"
+              >
+                {timeLabel(remaining)}
+              </strong>
+            </div>
+
+            <p className={styles.muted}>
+              {answered}/{questions.length} answered · {question.subject}
+            </p>
+
+            <div
+              className={styles.progress}
+              role="progressbar"
+              aria-valuemin={0}
+              aria-valuemax={questions.length}
+              aria-valuenow={answered}
+              aria-label="Questions answered"
+            >
+              <span
+                style={{
+                  width: `${(answered / questions.length) * 100}%`,
+                }}
+              />
+            </div>
+
+            <h2>{question.prompt}</h2>
+            <fieldset className={styles.choices}>
+              <legend className={styles.srOnly}>
+                Select one answer
+              </legend>
+
+              {question.options.map((option, index) => (
+                <label
+                  key={index}
+                  className={styles.choice}
+                >
+                  <input
+                    type="radio"
+                    name={`answer-${question.id}`}
+                    checked={answers[question.id] === index}
+                    onChange={() =>
+                      setAnswers((previous) => ({
+                        ...previous,
+                        [question.id]: index,
+                      }))
+                    }
+                  />
+                  <span>
+                    {String.fromCharCode(65 + index)}. {option}
+                  </span>
+                </label>
+              ))}
+            </fieldset>
+
+            <div className={styles.actions}>
+              <button
+                type="button"
+                className={styles.secondary}
+                disabled={current === 0}
+                onClick={() => setCurrent((value) => value - 1)}
+              >
+                Previous
+              </button>
+
+              {current < questions.length - 1 ? (
+                <button
+                  type="button"
+                  className={styles.primary}
+                  onClick={() => setCurrent((value) => value + 1)}
+                >
+                  Next question
+                </button>
+              ) : (
+                <button
+                  type="button"
+                  className={styles.primary}
+                  onClick={submitExam}
+                >
+                  Submit exam
+                </button>
+              )}
+            </div>
+          </section>
+
+          <section
+            className={styles.card}
+            aria-label="Question navigation"
+          >
+            <h2>Jump to a question</h2>
+            <div className={styles.numberGrid}>
+              {questions.map((item, index) => (
+                <button
+                  key={item.id}
+                  type="button"
+                  className={[
+                    styles.number,
+                    index === current ? styles.current : "",
+                    answers[item.id] !== undefined
+                      ? styles.answered
+                      : "",
+                  ].join(" ")}
+                  aria-label={`Question ${index + 1}${
+                    answers[item.id] !== undefined
+                      ? ", answered"
+                      : ", unanswered"
+                  }`}
+                  aria-current={
+                    index === current ? "step" : undefined
+                  }
+                  onClick={() => setCurrent(index)}
+                >
+                  {index + 1}
+                </button>
+              ))}
+            </div>
+
+            <button
+              type="button"
+              className={styles.submit}
+              onClick={submitExam}
+            >
+              Submit exam now
+            </button>
+          </section>
+        </>
+      )}
+
+      {phase === "result" && result && (
+        <>
+          <section className={styles.card}>
+            <p className={styles.eyebrow}>Exam completed</p>
+            <h2>
+              {result.correct}/{result.total} correct
+            </h2>
+            <p className={styles.score}>
+              {result.percent}%
+            </p>
+            <p>
+              {questions.length - answered} unanswered question(s).
+              Review the answers and explanations below.
+            </p>
+
+            <h3>Score by subject</h3>
+            <div className={styles.subjectGrid}>
+              {SUBJECTS.map((subject) => {
+                const score = result.perSubject[subject];
+
+                return (
+                  <div key={subject} className={styles.subject}>
+                    <strong>
+                      {subject === "Math"
+                        ? "Mathematics"
+                        : subject}
+                    </strong>
+                    <span>
+                      {score.correct}/{score.total} · {score.percent}%
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+
+            <button
+              type="button"
+              className={styles.primary}
+              onClick={startExam}
+            >
+              Try a new mock exam
+            </button>
+          </section>
+
+          <section
+            className={styles.card}
+            aria-label="Answer review"
+          >
+            <h2>Answer review</h2>
+
+            {questions.map((item, index) => {
+              const selected = answers[item.id];
+              const correct = selected === item.answer;
+
+              return (
+                <article
+                  key={item.id}
+                  className={styles.review}
+                >
+                  <p className={styles.muted}>
+                    {index + 1}. {item.subject}
+                  </p>
+                  <h3>{item.prompt}</h3>
+                  <p>
+                    Your answer:{" "}
+                    <strong>
+                      {selected === undefined
+                        ? "Unanswered"
+                        : item.options[selected]}
+                    </strong>
+                    {" · "}
+                    {correct ? "Correct" : "Incorrect"}
+                  </p>
+                  <p>
+                    Correct answer:{" "}
+                    <strong>
+                      {item.options[item.answer]}
+                    </strong>
+                  </p>
+                  <p>{item.explanation}</p>
+                </article>
+              );
+            })}
+          </section>
+        </>
+      )}
+    </main>
+  );
+}

@@ -1,0 +1,967 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #173b78;
+  --blue: #2563eb;
+  --text: #17243c;
+  --muted: #64748b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f7f9fc;
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.site-header {
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.navigation {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  color: var(--navy);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.nav-links a {
+  color: var(--text);
+}
+
+.nav-links a:hover {
+  color: var(--blue);
+}
+
+.main-content {
+  max-width: 1100px;
+  min-height: 75vh;
+  margin: auto;
+  padding: 30px 20px 80px;
+}
+
+.hero {
+  background: var(--navy);
+  color: white;
+  padding: 65px 35px;
+  border-radius: 22px;
+  margin-bottom: 48px;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 6vw, 58px);
+  line-height: 1.1;
+  margin: 25px 0;
+}
+
+.hero p {
+  color: #dbeafe;
+  font-size: 18px;
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+.pill {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 8px 14px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.primary-button {
+  display: inline-block;
+  background: var(--blue);
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  padding: 14px 22px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: 29px;
+  margin-bottom: 25px;
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.tool-card,
+.calculator {
+  background: white;
+  padding: 26px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+}
+
+.tool-card {
+  color: var(--text);
+}
+
+.tool-card:hover {
+  border-color: var(--blue);
+}
+
+.tool-icon {
+  font-size: 38px;
+}
+
+.tool-card h3 {
+  font-size: 21px;
+  margin: 15px 0 8px;
+}
+
+.tool-card p,
+.tool-page p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.tool-page {
+  max-width: 850px;
+  margin: 35px auto;
+}
+
+.tool-page h1 {
+  font-size: clamp(29px, 5vw, 42px);
+  margin: 20px 0;
+}
+
+.calculator {
+  margin-top: 30px;
+}
+
+.subject-row {
+  display: grid;
+  grid-template-columns: 1fr 120px 40px;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.subject-row input {
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.remove-button {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 0;
+  border-radius: 8px;
+  font-size: 22px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.secondary-button {
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.result {
+  background: #eff6ff;
+  padding: 24px;
+  border-radius: 12px;
+  margin-top: 25px;
+}
+
+.result strong {
+  display: block;
+  color: var(--navy);
+  font-size: 44px;
+}
+
+.note {
+  font-size: 13px;
+  margin-top: 24px;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  color: var(--muted);
+  border-top: 1px solid #e2e8f0;
+}
+
+@media (max-width: 650px) {
+  .tool-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 38px 22px;
+  }
+
+  .subject-row {
+    grid-template-columns: minmax(0, 1fr) 90px 35px;
+  }
+
+  .calculator {
+    padding: 16px;
+  }
+
+  .navigation {
+    justify-content: center;
+  }
+}
+
+@media print {
+  .site-header,
+  .footer,
+  .actions,
+  .remove-button,
+  .primary-button {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+  }
+
+  .calculator {
+    border: none;
+  }
+}
+
+
+/* ARALKIT_REVIEWER_V1 */
+
+.reviewer-check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.reviewer-check input {
+  width: 18px;
+  height: 18px;
+}
+
+.reviewer-meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0;
+  font-weight: 700;
+}
+
+.reviewer-options {
+  display: grid;
+  gap: 12px;
+  margin: 26px 0;
+}
+
+.reviewer-option {
+  width: 100%;
+  padding: 16px;
+  text-align: left;
+  border: 2px solid #e2e8f0;
+  background: white;
+  color: #17243c;
+  border-radius: 12px;
+}
+
+.reviewer-option:hover {
+  border-color: #2563eb;
+}
+
+.reviewer-option.selected {
+  border-color: #2563eb;
+  background: #dbeafe;
+  color: #173b78;
+  font-weight: 700;
+}
+
+.reviewer-review {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.reviewer-review h3 {
+  font-size: 19px;
+  font-weight: 700;
+  margin: 18px 0;
+}
+
+.reviewer-correct {
+  color: #15803d !important;
+  font-weight: 700;
+}
+
+.reviewer-wrong {
+  color: #b91c1c !important;
+  font-weight: 700;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+@media print {
+  .reviewer-check,
+  .reviewer-meta,
+  .reviewer-options {
+    display: none;
+  }
+}
+
+
+/* ARALKIT_WORKSHEET_V1 */
+
+.worksheet-fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.worksheet-fields label,
+.worksheet-title-label {
+  display: grid;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.worksheet-fields select,
+.worksheet-title-label input {
+  width: 100%;
+  padding: 12px;
+  color: #17243c;
+  background: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+}
+
+.worksheet-title-label {
+  margin-top: 20px;
+}
+
+.worksheet-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.worksheet-checkbox input {
+  width: 18px;
+  height: 18px;
+}
+
+.worksheet-empty {
+  text-align: center;
+  padding: 45px 20px;
+  color: #64748b;
+}
+
+.worksheet-print-button {
+  margin: 20px 0;
+}
+
+.worksheet-paper {
+  background: white;
+  color: #17243c;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 38px;
+  margin: 25px 0;
+}
+
+.worksheet-heading {
+  text-align: center;
+  border-bottom: 2px solid #173b78;
+  padding-bottom: 18px;
+}
+
+.worksheet-heading h2 {
+  font-size: 27px;
+  font-weight: 800;
+  color: #173b78;
+}
+
+.worksheet-heading h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.worksheet-student {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.worksheet-instruction {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.worksheet-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.worksheet-list li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  font-size: 18px;
+  break-inside: avoid;
+}
+
+.worksheet-blank {
+  white-space: nowrap;
+}
+
+.worksheet-brand {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 45px;
+  color: #64748b;
+}
+
+@media (max-width: 650px) {
+  .worksheet-fields,
+  .worksheet-student,
+  .worksheet-list {
+    grid-template-columns: 1fr;
+  }
+
+  .worksheet-paper {
+    padding: 20px;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+
+  .worksheet-controls,
+  .worksheet-empty,
+  .worksheet-print-button {
+    display: none !important;
+  }
+
+  .main-content,
+  .tool-page {
+    max-width: none;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .worksheet-paper {
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .worksheet-list {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .worksheet-answer-key {
+    break-before: page;
+    page-break-before: always;
+  }
+}
+
+
+/* ARALKIT_COVER_V1 */
+
+.cover-templates {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 20px 0 32px;
+}
+
+.cover-template {
+  padding: 16px 10px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  background: white;
+  color: #17243c;
+  font-weight: 700;
+}
+
+.cover-template.selected {
+  border-color: #2563eb;
+  background: #dbeafe;
+  color: #173b78;
+}
+
+.cover-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 22px 0;
+}
+
+.cover-fields label {
+  display: grid;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.cover-fields input {
+  width: 100%;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  color: #17243c;
+}
+
+.cover-print-button {
+  margin: 25px 0;
+}
+
+.cover-sheet {
+  width: 100%;
+  min-height: 700px;
+  aspect-ratio: 210 / 297;
+  background: white;
+  color: #173b78;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  overflow-wrap: anywhere;
+  overflow: hidden;
+  box-shadow: 0 10px 35px #00000010;
+}
+
+.cover-school {
+  font-size: clamp(14px, 2.5vw, 23px);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cover-symbol {
+  font-size: clamp(35px, 7vw, 70px);
+  margin-top: 28px;
+}
+
+.cover-eyebrow {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.cover-center h2 {
+  font-size: clamp(28px, 6vw, 56px);
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 22px 0;
+}
+
+.cover-subject {
+  font-size: clamp(16px, 3vw, 24px);
+  font-weight: 700;
+}
+
+.cover-info {
+  margin: 18px 0;
+}
+
+.cover-info span {
+  display: block;
+  color: #64748b;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.cover-info strong {
+  display: block;
+  font-size: clamp(16px, 3vw, 23px);
+}
+
+.cover-info p {
+  margin: 5px 0;
+}
+
+.cover-date {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.cover-classic {
+  border-top: 15px solid #173b78;
+  border-bottom: 15px solid #173b78;
+}
+
+.cover-classic .cover-center {
+  border-top: 2px solid #173b78;
+  border-bottom: 2px solid #173b78;
+  padding: 30px 0;
+}
+
+.cover-modern {
+  background: linear-gradient(
+    155deg,
+    #173b78 0%,
+    #2563eb 36%,
+    #ffffff 36%,
+    #ffffff 100%
+  );
+}
+
+.cover-modern .cover-top {
+  color: white;
+}
+
+.cover-modern .cover-center h2 {
+  color: #1d4ed8;
+}
+
+.cover-modern .cover-bottom {
+  border-top: 3px solid #2563eb;
+  padding-top: 25px;
+}
+
+.cover-minimal {
+  background: #ffffff;
+  color: #17243c;
+}
+
+.cover-minimal .cover-symbol {
+  display: none;
+}
+
+.cover-minimal .cover-center h2 {
+  font-weight: 600;
+}
+
+.cover-minimal .cover-center {
+  border-left: 4px solid #17243c;
+  padding: 20px;
+}
+
+.cover-status {
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
+}
+
+@media (max-width: 650px) {
+  .cover-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .cover-templates {
+    grid-template-columns: 1fr;
+  }
+
+  .cover-sheet {
+    min-height: 550px;
+  }
+
+  .cover-eyebrow {
+    letter-spacing: 2px;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  .cover-controls,
+  .cover-print-button,
+  .cover-status {
+    display: none !important;
+  }
+
+  .cover-page,
+  .main-content {
+    width: 100%;
+    max-width: none;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cover-sheet {
+    width: 100%;
+    min-height: 273mm;
+    aspect-ratio: auto;
+    border-radius: 0;
+    box-shadow: none;
+    break-inside: avoid;
+    padding: 18mm;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .cover-school {
+    font-size: 19pt;
+  }
+
+  .cover-center h2 {
+    font-size: 32pt;
+  }
+
+  .cover-subject {
+    font-size: 18pt;
+  }
+
+  .cover-info strong {
+    font-size: 16pt;
+  }
+}
+
+
+/* ARALKIT_PHASE6A */
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.footer-links a {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.info-list {
+  list-style: disc;
+  padding-left: 24px;
+  margin-top: 18px;
+  line-height: 2;
+}
+
+@media print {
+  .footer-links {
+    display: none !important;
+  }
+}
+
+
+/* ARALKIT_PHASE6D */
+
+/* ---------------------------------------
+   Mobile navigation
+--------------------------------------- */
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 650px) {
+
+  .navigation {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .brand {
+    font-size: 20px;
+    white-space: nowrap;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  .mobile-nav summary {
+    display: block;
+    cursor: pointer;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background: #eff6ff;
+    color: #173b78;
+    font-size: 14px;
+    font-weight: 700;
+    list-style: none;
+    user-select: none;
+  }
+
+  .mobile-nav summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .mobile-nav summary:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+  }
+
+  .mobile-nav-links {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    z-index: 50;
+    width: min(260px, calc(100vw - 40px));
+    padding: 8px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px #00000020;
+  }
+
+  .mobile-nav-links a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: #173b78;
+    font-weight: 600;
+  }
+
+  .mobile-nav-links a:hover,
+  .mobile-nav-links a:focus-visible {
+    background: #eff6ff;
+  }
+
+}
+
+/* ---------------------------------------
+   Modern Blue cover contrast
+--------------------------------------- */
+
+.cover-modern .cover-school {
+  color: #ffffff;
+  text-shadow: 0 1px 2px #102e5b;
+}
+
+.cover-modern .cover-symbol {
+  color: #ffffff;
+}
+
+/* ---------------------------------------
+   Worksheet writing space
+--------------------------------------- */
+
+.worksheet-paper:not(.worksheet-answer-key)
+.worksheet-list {
+  row-gap: 18px;
+}
+
+.worksheet-paper:not(.worksheet-answer-key)
+.worksheet-list li {
+  min-height: 44px;
+  align-items: flex-start;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* ---------------------------------------
+   Print safety
+--------------------------------------- */
+
+@media print {
+
+  .mobile-nav {
+    display: none !important;
+  }
+
+  .cover-modern .cover-school {
+    color: #ffffff !important;
+  }
+
+  .worksheet-paper:not(.worksheet-answer-key)
+  .worksheet-list li {
+    min-height: 44px;
+    break-inside: avoid;
+  }
+
+}

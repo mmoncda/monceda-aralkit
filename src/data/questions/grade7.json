@@ -1,0 +1,682 @@
+[
+  {
+    "id": "M01",
+    "subject": "Math",
+    "prompt": "What is 3/4 + 1/8?",
+    "options": [
+      "5/8",
+      "7/8",
+      "1/2",
+      "3/8"
+    ],
+    "answer": 1,
+    "explanation": "Convert 3/4 to 6/8. Then add 1/8 to get 7/8."
+  },
+  {
+    "id": "M02",
+    "subject": "Math",
+    "prompt": "What is 15% of 200?",
+    "options": [
+      "15",
+      "20",
+      "30",
+      "45"
+    ],
+    "answer": 2,
+    "explanation": "0.15 multiplied by 200 equals 30."
+  },
+  {
+    "id": "M03",
+    "subject": "Math",
+    "prompt": "If 2x + 5 = 17, what is x?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "11"
+    ],
+    "answer": 1,
+    "explanation": "Subtract 5, then divide 12 by 2."
+  },
+  {
+    "id": "M04",
+    "subject": "Math",
+    "prompt": "Find the area of an 8 cm by 5 cm rectangle.",
+    "options": [
+      "13 cm²",
+      "26 cm²",
+      "40 cm²",
+      "80 cm²"
+    ],
+    "answer": 2,
+    "explanation": "Area equals length multiplied by width."
+  },
+  {
+    "id": "M05",
+    "subject": "Math",
+    "prompt": "Which fraction equals 0.6?",
+    "options": [
+      "1/6",
+      "2/5",
+      "3/5",
+      "5/6"
+    ],
+    "answer": 2,
+    "explanation": "0.6 equals 6/10, which simplifies to 3/5."
+  },
+  {
+    "id": "M06",
+    "subject": "Math",
+    "prompt": "Find the mean of 4, 6, 8, and 10.",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": 1,
+    "explanation": "The sum is 28. Divide by 4 to get 7."
+  },
+  {
+    "id": "M07",
+    "subject": "Math",
+    "prompt": "What is 3 cubed?",
+    "options": [
+      "9",
+      "18",
+      "27",
+      "81"
+    ],
+    "answer": 2,
+    "explanation": "3 cubed means 3 multiplied by 3 multiplied by 3."
+  },
+  {
+    "id": "M08",
+    "subject": "Math",
+    "prompt": "A ratio is 2:3 and the total is 25. What is the first share?",
+    "options": [
+      "5",
+      "10",
+      "15",
+      "20"
+    ],
+    "answer": 1,
+    "explanation": "There are 5 parts. Each part is 5, so 2 parts equal 10."
+  },
+  {
+    "id": "M09",
+    "subject": "Math",
+    "prompt": "How many meters are in 1.5 kilometers?",
+    "options": [
+      "150",
+      "500",
+      "1500",
+      "15000"
+    ],
+    "answer": 2,
+    "explanation": "One kilometer is 1000 meters."
+  },
+  {
+    "id": "M10",
+    "subject": "Math",
+    "prompt": "Twelve pencils cost ₱84. What is the cost of one pencil?",
+    "options": [
+      "₱6",
+      "₱7",
+      "₱8",
+      "₱12"
+    ],
+    "answer": 1,
+    "explanation": "Divide ₱84 by 12."
+  },
+  {
+    "id": "S01",
+    "subject": "Science",
+    "prompt": "What is the change from liquid to gas called?",
+    "options": [
+      "Freezing",
+      "Condensation",
+      "Evaporation",
+      "Melting"
+    ],
+    "answer": 2,
+    "explanation": "Evaporation changes liquid into gas."
+  },
+  {
+    "id": "S02",
+    "subject": "Science",
+    "prompt": "What energy source do plants use for photosynthesis?",
+    "options": [
+      "Sunlight",
+      "Sound",
+      "Wind",
+      "Electricity"
+    ],
+    "answer": 0,
+    "explanation": "Plants capture light energy during photosynthesis."
+  },
+  {
+    "id": "S03",
+    "subject": "Science",
+    "prompt": "What force opposes sliding between surfaces?",
+    "options": [
+      "Gravity",
+      "Friction",
+      "Magnetism",
+      "Buoyancy"
+    ],
+    "answer": 1,
+    "explanation": "Friction resists relative motion between surfaces."
+  },
+  {
+    "id": "S04",
+    "subject": "Science",
+    "prompt": "Which blood cells carry most oxygen in the blood?",
+    "options": [
+      "Platelets",
+      "White cells",
+      "Red cells",
+      "Nerve cells"
+    ],
+    "answer": 2,
+    "explanation": "Red blood cells contain hemoglobin that carries oxygen."
+  },
+  {
+    "id": "S05",
+    "subject": "Science",
+    "prompt": "What mainly causes day and night?",
+    "options": [
+      "Earth's rotation",
+      "Earth's revolution",
+      "The Moon",
+      "Clouds"
+    ],
+    "answer": 0,
+    "explanation": "Earth rotates on its axis, changing which side faces the Sun."
+  },
+  {
+    "id": "S06",
+    "subject": "Science",
+    "prompt": "Which organism is a producer in a grassland?",
+    "options": [
+      "Snake",
+      "Grass",
+      "Hawk",
+      "Frog"
+    ],
+    "answer": 1,
+    "explanation": "Grass produces food through photosynthesis."
+  },
+  {
+    "id": "S07",
+    "subject": "Science",
+    "prompt": "Which method can separate sand from water?",
+    "options": [
+      "Filtration",
+      "Magnetism",
+      "Freezing only",
+      "Distillation only"
+    ],
+    "answer": 0,
+    "explanation": "A filter can retain sand while water passes through."
+  },
+  {
+    "id": "S08",
+    "subject": "Science",
+    "prompt": "A solution with pH 4 is generally...",
+    "options": [
+      "Neutral",
+      "Basic",
+      "Acidic",
+      "Always pure"
+    ],
+    "answer": 2,
+    "explanation": "A pH below 7 indicates acidity."
+  },
+  {
+    "id": "S09",
+    "subject": "Science",
+    "prompt": "Which material is a good electrical conductor?",
+    "options": [
+      "Rubber",
+      "Dry wood",
+      "Plastic",
+      "Copper"
+    ],
+    "answer": 3,
+    "explanation": "Copper allows electric charge to move easily."
+  },
+  {
+    "id": "S10",
+    "subject": "Science",
+    "prompt": "Why can sound not travel through a vacuum?",
+    "options": [
+      "It needs matter to travel",
+      "It needs sunlight",
+      "It only travels upward",
+      "It has no energy"
+    ],
+    "answer": 0,
+    "explanation": "Sound is a mechanical wave that needs a material medium."
+  },
+  {
+    "id": "E01",
+    "subject": "English",
+    "prompt": "She ___ to school every weekday.",
+    "options": [
+      "go",
+      "goes",
+      "going",
+      "gone"
+    ],
+    "answer": 1,
+    "explanation": "A singular third-person subject takes 'goes' in the simple present."
+  },
+  {
+    "id": "E02",
+    "subject": "English",
+    "prompt": "Which word is a synonym of 'rapid'?",
+    "options": [
+      "Slow",
+      "Late",
+      "Fast",
+      "Weak"
+    ],
+    "answer": 2,
+    "explanation": "Rapid means fast or quick."
+  },
+  {
+    "id": "E03",
+    "subject": "English",
+    "prompt": "Which word is an antonym of 'scarce'?",
+    "options": [
+      "Rare",
+      "Limited",
+      "Few",
+      "Abundant"
+    ],
+    "answer": 3,
+    "explanation": "Abundant means plentiful, the opposite of scarce."
+  },
+  {
+    "id": "E04",
+    "subject": "English",
+    "prompt": "Which pronoun replaces 'Maria and I'?",
+    "options": [
+      "They",
+      "We",
+      "She",
+      "Us"
+    ],
+    "answer": 1,
+    "explanation": "Use 'we' when the speaker is part of the subject."
+  },
+  {
+    "id": "E05",
+    "subject": "English",
+    "prompt": "The list of items ___ on the table.",
+    "options": [
+      "are",
+      "were",
+      "is",
+      "be"
+    ],
+    "answer": 2,
+    "explanation": "The subject 'list' is singular, so use 'is'."
+  },
+  {
+    "id": "E06",
+    "subject": "English",
+    "prompt": "It rained heavily, so the game was canceled. What was the cause?",
+    "options": [
+      "The cancellation",
+      "The heavy rain",
+      "The players",
+      "The field"
+    ],
+    "answer": 1,
+    "explanation": "The heavy rain caused the cancellation."
+  },
+  {
+    "id": "E07",
+    "subject": "English",
+    "prompt": "Lena brought an umbrella after seeing dark clouds. What did she expect?",
+    "options": [
+      "Snow",
+      "Rain",
+      "Heat",
+      "Wind only"
+    ],
+    "answer": 1,
+    "explanation": "Dark clouds and an umbrella suggest she expected rain."
+  },
+  {
+    "id": "E08",
+    "subject": "English",
+    "prompt": "A paragraph explains that seedlings need sunlight and water. What is its main idea?",
+    "options": [
+      "How plants grow",
+      "How to cook",
+      "How to travel",
+      "How to paint"
+    ],
+    "answer": 0,
+    "explanation": "The details describe what plants need for growth."
+  },
+  {
+    "id": "E09",
+    "subject": "English",
+    "prompt": "Which sentence has correct punctuation?",
+    "options": [
+      "Where are you going.",
+      "Where are you going?",
+      "where are you going!",
+      "Where are you going,"
+    ],
+    "answer": 1,
+    "explanation": "A direct question ends with a question mark."
+  },
+  {
+    "id": "E10",
+    "subject": "English",
+    "prompt": "They ___ their homework yesterday.",
+    "options": [
+      "finish",
+      "finishes",
+      "finishing",
+      "finished"
+    ],
+    "answer": 3,
+    "explanation": "'Yesterday' calls for the simple past tense."
+  },
+  {
+    "id": "R01",
+    "subject": "Reasoning",
+    "prompt": "What comes next: 2, 4, 8, 16, ...?",
+    "options": [
+      "18",
+      "24",
+      "32",
+      "36"
+    ],
+    "answer": 2,
+    "explanation": "Each number is multiplied by 2."
+  },
+  {
+    "id": "R02",
+    "subject": "Reasoning",
+    "prompt": "Which shape is different from the others?",
+    "options": [
+      "Triangle",
+      "Square",
+      "Circle",
+      "Rectangle"
+    ],
+    "answer": 2,
+    "explanation": "A circle has no straight sides."
+  },
+  {
+    "id": "R03",
+    "subject": "Reasoning",
+    "prompt": "What comes next: A, C, E, G, ...?",
+    "options": [
+      "H",
+      "I",
+      "J",
+      "K"
+    ],
+    "answer": 1,
+    "explanation": "The pattern skips one letter each time."
+  },
+  {
+    "id": "R04",
+    "subject": "Reasoning",
+    "prompt": "You face north and turn right. Which way do you face?",
+    "options": [
+      "West",
+      "South",
+      "East",
+      "North"
+    ],
+    "answer": 2,
+    "explanation": "A right turn from north points east."
+  },
+  {
+    "id": "R05",
+    "subject": "Reasoning",
+    "prompt": "Five identical machines make five items in five minutes. How long for 100 machines to make 100 items?",
+    "options": [
+      "5 minutes",
+      "20 minutes",
+      "100 minutes",
+      "500 minutes"
+    ],
+    "answer": 0,
+    "explanation": "Each machine makes one item in five minutes."
+  },
+  {
+    "id": "R06",
+    "subject": "Reasoning",
+    "prompt": "All roses are flowers. Can we conclude that all flowers are roses?",
+    "options": [
+      "Yes",
+      "No",
+      "Only red flowers",
+      "Only in gardens"
+    ],
+    "answer": 1,
+    "explanation": "The first statement does not say every flower is a rose."
+  },
+  {
+    "id": "R07",
+    "subject": "Reasoning",
+    "prompt": "What day is three days after Tuesday?",
+    "options": [
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "answer": 1,
+    "explanation": "Wednesday is day one, Thursday day two, Friday day three."
+  },
+  {
+    "id": "R08",
+    "subject": "Reasoning",
+    "prompt": "What comes next: 1, 4, 9, 16, ...?",
+    "options": [
+      "20",
+      "24",
+      "25",
+      "32"
+    ],
+    "answer": 2,
+    "explanation": "These are the squares of 1, 2, 3, 4, and 5."
+  },
+  {
+    "id": "R09",
+    "subject": "Reasoning",
+    "prompt": "Ana is taller than Ben. Ben is taller than Carlo. Who is tallest?",
+    "options": [
+      "Ana",
+      "Ben",
+      "Carlo",
+      "Cannot tell"
+    ],
+    "answer": 0,
+    "explanation": "The comparison gives Ana greater height than both."
+  },
+  {
+    "id": "R10",
+    "subject": "Reasoning",
+    "prompt": "If CAT becomes DBU by shifting each letter forward, what does DOG become?",
+    "options": [
+      "EPH",
+      "FQI",
+      "CNE",
+      "EOG"
+    ],
+    "answer": 0,
+    "explanation": "D becomes E, O becomes P, and G becomes H."
+  },
+  {"id":"M11","subject":"Math","prompt":"What is 48 ÷ 6 × 3?","options":["4","8","24","144"],"answer":2,"explanation":"Division and multiplication have equal priority, so work left to right: 48 ÷ 6 = 8, then 8 × 3 = 24."},
+  {"id":"M12","subject":"Math","prompt":"What is the value of 5² − 3²?","options":["4","16","22","34"],"answer":1,"explanation":"5² is 25 and 3² is 9; 25 − 9 = 16."},
+  {"id":"M13","subject":"Math","prompt":"Which integer is greatest?","options":["−12","−3","0","−1"],"answer":2,"explanation":"Zero is greater than every negative integer."},
+  {"id":"M14","subject":"Math","prompt":"What is −7 + 12?","options":["−19","−5","5","19"],"answer":2,"explanation":"Moving 12 units right from −7 lands at 5."},
+  {"id":"M15","subject":"Math","prompt":"What is 2/3 of 27?","options":["9","12","18","24"],"answer":2,"explanation":"Divide 27 by 3 and multiply by 2: 9 × 2 = 18."},
+  {"id":"M16","subject":"Math","prompt":"Which fraction is smallest?","options":["1/2","3/8","2/5","5/12"],"answer":1,"explanation":"Their decimal values are 0.5, 0.375, 0.4, and about 0.417, so 3/8 is smallest."},
+  {"id":"M17","subject":"Math","prompt":"A shirt marked ₱800 is discounted by 25%. What is the sale price?","options":["₱200","₱575","₱600","₱775"],"answer":2,"explanation":"The discount is ₱200, so the sale price is ₱800 − ₱200 = ₱600."},
+  {"id":"M18","subject":"Math","prompt":"A number increases from 50 to 65. What is the percent increase?","options":["15%","23%","30%","65%"],"answer":2,"explanation":"The increase is 15; 15 ÷ 50 = 0.30, or 30%."},
+  {"id":"M19","subject":"Math","prompt":"Simplify the ratio 18:24.","options":["2:3","3:4","4:5","6:8"],"answer":1,"explanation":"Divide both terms by their greatest common factor, 6, to get 3:4."},
+  {"id":"M20","subject":"Math","prompt":"On a map, 1 cm represents 5 km. How far does 7 cm represent?","options":["12 km","30 km","35 km","70 km"],"answer":2,"explanation":"Multiply 7 cm by 5 km per centimeter to get 35 km."},
+  {"id":"M21","subject":"Math","prompt":"Solve: 4x − 7 = 21.","options":["3.5","7","14","28"],"answer":1,"explanation":"Add 7 to get 4x = 28, then divide by 4: x = 7."},
+  {"id":"M22","subject":"Math","prompt":"If y = 3x + 2, what is y when x = 4?","options":["9","12","14","20"],"answer":2,"explanation":"Substitute 4 for x: y = 3(4) + 2 = 14."},
+  {"id":"M23","subject":"Math","prompt":"Which expression is equivalent to 5(a + 3)?","options":["5a + 3","5a + 8","5a + 15","8a"],"answer":2,"explanation":"Distribute 5 to both terms: 5a + 15."},
+  {"id":"M24","subject":"Math","prompt":"What is the next term in 4, 9, 14, 19, ...?","options":["21","23","24","28"],"answer":2,"explanation":"Each term increases by 5, so 19 + 5 = 24."},
+  {"id":"M25","subject":"Math","prompt":"The first term of a pattern is 2, and each new term is twice the previous term. What is the fifth term?","options":["10","16","32","64"],"answer":2,"explanation":"The terms are 2, 4, 8, 16, and 32."},
+  {"id":"M26","subject":"Math","prompt":"What is the perimeter of a square with side length 6.5 cm?","options":["13 cm","26 cm","39 cm","42.25 cm"],"answer":1,"explanation":"A square has four equal sides, so its perimeter is 4 × 6.5 = 26 cm."},
+  {"id":"M27","subject":"Math","prompt":"A triangle has base 10 cm and height 7 cm. What is its area?","options":["17 cm²","35 cm²","70 cm²","140 cm²"],"answer":1,"explanation":"Triangle area is one-half × base × height: 1/2 × 10 × 7 = 35 cm²."},
+  {"id":"M28","subject":"Math","prompt":"What is the volume of a rectangular prism measuring 3 cm by 4 cm by 5 cm?","options":["12 cm³","20 cm³","47 cm³","60 cm³"],"answer":3,"explanation":"Volume equals length × width × height: 3 × 4 × 5 = 60 cm³."},
+  {"id":"M29","subject":"Math","prompt":"Two angles of a triangle are 48° and 67°. What is the third angle?","options":["55°","65°","75°","115°"],"answer":1,"explanation":"Triangle angles total 180°, so the missing angle is 180° − 48° − 67° = 65°."},
+  {"id":"M30","subject":"Math","prompt":"An angle measuring 135° is classified as what kind of angle?","options":["Acute","Right","Obtuse","Reflex"],"answer":2,"explanation":"An obtuse angle measures more than 90° but less than 180°."},
+  {"id":"M31","subject":"Math","prompt":"What is the circumference of a circle with diameter 10 cm, using π ≈ 3.14?","options":["15.7 cm","31.4 cm","62.8 cm","314 cm"],"answer":1,"explanation":"Circumference is π times diameter: 3.14 × 10 = 31.4 cm."},
+  {"id":"M32","subject":"Math","prompt":"A point is at (−2, 5). In which quadrant is it?","options":["Quadrant I","Quadrant II","Quadrant III","Quadrant IV"],"answer":1,"explanation":"A negative x-coordinate and positive y-coordinate place a point in Quadrant II."},
+  {"id":"M33","subject":"Math","prompt":"What is the median of 3, 5, 8, 9, and 20?","options":["5","8","9","20"],"answer":1,"explanation":"The ordered list has five values, and the middle value is 8."},
+  {"id":"M34","subject":"Math","prompt":"What is the mode of 2, 4, 4, 5, 7, 7, 7, 9?","options":["4","5","7","9"],"answer":2,"explanation":"Seven appears three times, more often than any other value."},
+  {"id":"M35","subject":"Math","prompt":"What is the range of 12, 18, 7, 25, and 16?","options":["9","13","18","32"],"answer":2,"explanation":"Range equals maximum minus minimum: 25 − 7 = 18."},
+  {"id":"M36","subject":"Math","prompt":"A fair six-sided die is rolled once. What is the probability of rolling an even number?","options":["1/6","1/3","1/2","2/3"],"answer":2,"explanation":"Three of the six outcomes—2, 4, and 6—are even, so the probability is 3/6 = 1/2."},
+  {"id":"M37","subject":"Math","prompt":"A bag has 3 red, 2 blue, and 5 green marbles. What is the probability of drawing a blue marble?","options":["1/10","1/5","1/2","2/5"],"answer":1,"explanation":"There are 2 blue marbles out of 10 total, so the probability is 2/10 = 1/5."},
+  {"id":"M38","subject":"Math","prompt":"Convert 2.75 hours to hours and minutes.","options":["2 hours 15 minutes","2 hours 30 minutes","2 hours 45 minutes","2 hours 75 minutes"],"answer":2,"explanation":"The decimal part, 0.75 hour, equals 0.75 × 60 = 45 minutes."},
+  {"id":"M39","subject":"Math","prompt":"How many milliliters are in 3.2 liters?","options":["32 mL","320 mL","3,200 mL","32,000 mL"],"answer":2,"explanation":"One liter equals 1,000 milliliters, so 3.2 liters equals 3,200 mL."},
+  {"id":"M40","subject":"Math","prompt":"A car travels 180 km in 3 hours at a constant rate. What is its speed?","options":["30 km/h","60 km/h","90 km/h","540 km/h"],"answer":1,"explanation":"Speed equals distance divided by time: 180 ÷ 3 = 60 km/h."},
+  {"id":"M41","subject":"Math","prompt":"Four notebooks cost ₱156. At the same price, how much do seven notebooks cost?","options":["₱195","₱234","₱273","₱312"],"answer":2,"explanation":"Each notebook costs ₱39, so seven cost 7 × ₱39 = ₱273."},
+  {"id":"M42","subject":"Math","prompt":"What is 0.045 written as a percent?","options":["0.45%","4.5%","45%","450%"],"answer":1,"explanation":"Multiply the decimal by 100: 0.045 × 100 = 4.5%."},
+  {"id":"M43","subject":"Math","prompt":"What is 7/20 written as a decimal?","options":["0.07","0.28","0.35","0.70"],"answer":2,"explanation":"Divide 7 by 20, or write 7/20 as 35/100, which equals 0.35."},
+  {"id":"M44","subject":"Math","prompt":"Round 38.746 to the nearest tenth.","options":["38.7","38.8","38.74","39.0"],"answer":0,"explanation":"The hundredths digit is 4, so the tenths digit stays 7."},
+  {"id":"M45","subject":"Math","prompt":"What is the greatest common factor of 36 and 54?","options":["6","9","18","27"],"answer":2,"explanation":"Eighteen is the greatest integer that divides both 36 and 54."},
+  {"id":"M46","subject":"Math","prompt":"What is the least common multiple of 6 and 8?","options":["12","24","36","48"],"answer":1,"explanation":"Twenty-four is the first positive multiple shared by 6 and 8."},
+  {"id":"M47","subject":"Math","prompt":"Which number is prime?","options":["21","29","39","51"],"answer":1,"explanation":"Twenty-nine has exactly two positive factors: 1 and 29."},
+  {"id":"M48","subject":"Math","prompt":"Evaluate 18 − 2(4 + 3).","options":["4","11","28","112"],"answer":0,"explanation":"Evaluate parentheses first: 18 − 2(7) = 18 − 14 = 4."},
+  {"id":"M49","subject":"Math","prompt":"A recipe uses 2 cups of flour for 12 muffins. How many cups are needed for 30 muffins at the same rate?","options":["3","4","5","6"],"answer":2,"explanation":"Thirty is 2.5 times 12, so the flour needed is 2 × 2.5 = 5 cups."},
+  {"id":"M50","subject":"Math","prompt":"The average of five numbers is 18. What is their sum?","options":["23","72","90","108"],"answer":2,"explanation":"Sum equals average times number of values: 18 × 5 = 90."},
+  {"id":"S11","subject":"Science","prompt":"What is the smallest unit that can carry out all life processes?","options":["Atom","Cell","Organ","Tissue"],"answer":1,"explanation":"The cell is the basic structural and functional unit of living things."},
+  {"id":"S12","subject":"Science","prompt":"Which cell structure controls most cell activities and contains DNA?","options":["Cell wall","Nucleus","Vacuole","Cytoplasm"],"answer":1,"explanation":"In eukaryotic cells, the nucleus contains DNA and directs cell activities."},
+  {"id":"S13","subject":"Science","prompt":"Which structure is present in plant cells but not animal cells?","options":["Cell membrane","Cytoplasm","Nucleus","Cell wall"],"answer":3,"explanation":"Plant cells have a rigid cell wall outside the cell membrane; animal cells do not."},
+  {"id":"S14","subject":"Science","prompt":"Which organ pumps blood throughout the human body?","options":["Heart","Liver","Lung","Stomach"],"answer":0,"explanation":"The heart contracts to circulate blood through blood vessels."},
+  {"id":"S15","subject":"Science","prompt":"Where does most nutrient absorption occur in the digestive system?","options":["Esophagus","Large intestine","Small intestine","Stomach"],"answer":2,"explanation":"Villi in the small intestine provide a large surface for absorbing nutrients."},
+  {"id":"S16","subject":"Science","prompt":"Which body system exchanges oxygen and carbon dioxide with the environment?","options":["Digestive system","Nervous system","Respiratory system","Skeletal system"],"answer":2,"explanation":"The respiratory system carries out gas exchange, mainly in the lungs."},
+  {"id":"S17","subject":"Science","prompt":"What is the main function of roots in most plants?","options":["Absorb water and anchor the plant","Attract pollinators","Make seeds","Release fruit"],"answer":0,"explanation":"Roots anchor the plant and absorb water and minerals from soil."},
+  {"id":"S18","subject":"Science","prompt":"In a food chain, what role does a mushroom usually have?","options":["Consumer","Decomposer","Predator","Producer"],"answer":1,"explanation":"Fungi such as mushrooms break down dead organic matter and recycle nutrients."},
+  {"id":"S19","subject":"Science","prompt":"What relationship benefits both organisms involved?","options":["Competition","Mutualism","Parasitism","Predation"],"answer":1,"explanation":"In mutualism, each participating organism receives a benefit."},
+  {"id":"S20","subject":"Science","prompt":"Which is an inherited trait rather than a learned behavior?","options":["Ability to ride a bicycle","Blood type","Handwriting style","Knowledge of multiplication"],"answer":1,"explanation":"Blood type is determined by genes inherited from biological parents."},
+  {"id":"S21","subject":"Science","prompt":"Which state of matter has a definite volume but takes the shape of its container?","options":["Gas","Liquid","Plasma","Solid"],"answer":1,"explanation":"A liquid keeps its volume but flows to match the shape of its container."},
+  {"id":"S22","subject":"Science","prompt":"What change of state occurs when water vapor forms liquid droplets?","options":["Condensation","Freezing","Melting","Sublimation"],"answer":0,"explanation":"Condensation is the change from gas to liquid."},
+  {"id":"S23","subject":"Science","prompt":"Which statement describes a chemical change?","options":["Ice melts","Iron rusts","Paper is cut","Sugar dissolves in water"],"answer":1,"explanation":"Rusting forms new substances called iron oxides, so it is a chemical change."},
+  {"id":"S24","subject":"Science","prompt":"Which is a pure substance made of only one type of atom?","options":["Air","Copper","Salt water","Soil"],"answer":1,"explanation":"Copper is an element and consists of one type of atom."},
+  {"id":"S25","subject":"Science","prompt":"How can dissolved salt be recovered from saltwater?","options":["Evaporate the water","Filter the mixture","Use a magnet","Let the salt settle"],"answer":0,"explanation":"Water evaporates while the nonvolatile salt remains behind."},
+  {"id":"S26","subject":"Science","prompt":"Which subatomic particle has a negative electric charge?","options":["Electron","Neutron","Nucleus","Proton"],"answer":0,"explanation":"Electrons carry negative charge; protons are positive and neutrons are neutral."},
+  {"id":"S27","subject":"Science","prompt":"A substance has a mass of 60 g and a volume of 20 cm³. What is its density?","options":["0.33 g/cm³","3 g/cm³","40 g/cm³","80 g/cm³"],"answer":1,"explanation":"Density equals mass divided by volume: 60 ÷ 20 = 3 g/cm³."},
+  {"id":"S28","subject":"Science","prompt":"Which simple machine is a ramp?","options":["Inclined plane","Lever","Pulley","Wheel and axle"],"answer":0,"explanation":"A ramp is an inclined plane that helps move objects between heights."},
+  {"id":"S29","subject":"Science","prompt":"What happens to an object's motion when balanced forces act on it?","options":["It always speeds up","It always stops","Its motion does not change","It moves in a circle"],"answer":2,"explanation":"Balanced forces give zero net force, so there is no change in motion."},
+  {"id":"S30","subject":"Science","prompt":"Which quantity is calculated by dividing distance by time?","options":["Density","Force","Mass","Speed"],"answer":3,"explanation":"Average speed is the distance traveled divided by elapsed time."},
+  {"id":"S31","subject":"Science","prompt":"A stretched rubber band stores which form of energy?","options":["Chemical","Elastic potential","Nuclear","Thermal"],"answer":1,"explanation":"Deforming an elastic object stores elastic potential energy."},
+  {"id":"S32","subject":"Science","prompt":"Which energy transformation occurs in a lit flashlight?","options":["Chemical to electrical to light","Light to chemical to sound","Mechanical to nuclear to light","Thermal to chemical to motion"],"answer":0,"explanation":"Battery chemicals supply electrical energy, which the bulb converts mainly to light and heat."},
+  {"id":"S33","subject":"Science","prompt":"In a simple series circuit, what happens if one bulb is removed?","options":["All bulbs go out","The other bulbs get separate batteries","The other bulbs stay unchanged","Only the battery stops working"],"answer":0,"explanation":"Removing a bulb opens the single current path in a series circuit."},
+  {"id":"S34","subject":"Science","prompt":"Which part of a wave is the distance from one crest to the next crest?","options":["Amplitude","Frequency","Period","Wavelength"],"answer":3,"explanation":"Wavelength is the distance between matching points on consecutive waves."},
+  {"id":"S35","subject":"Science","prompt":"Why does a pencil appear bent when partly submerged in water?","options":["Absorption","Reflection only","Refraction","Vibration"],"answer":2,"explanation":"Light changes speed and direction as it passes between water and air, causing refraction."},
+  {"id":"S36","subject":"Science","prompt":"Which layer of Earth is liquid and composed mainly of iron and nickel?","options":["Crust","Inner core","Mantle","Outer core"],"answer":3,"explanation":"Earth's outer core is a liquid layer made mainly of iron and nickel."},
+  {"id":"S37","subject":"Science","prompt":"Most earthquakes occur near what geological features?","options":["Plate boundaries","River deltas","Sand dunes","The centers of stable plates"],"answer":0,"explanation":"Stress and movement are concentrated where tectonic plates meet."},
+  {"id":"S38","subject":"Science","prompt":"Which rock forms when magma or lava cools and solidifies?","options":["Igneous","Metamorphic","Sedimentary","Weathered"],"answer":0,"explanation":"Igneous rock forms from cooled molten rock."},
+  {"id":"S39","subject":"Science","prompt":"What process breaks rock into smaller pieces without moving it?","options":["Deposition","Erosion","Weathering","Volcanism"],"answer":2,"explanation":"Weathering breaks down rock in place; erosion transports the pieces."},
+  {"id":"S40","subject":"Science","prompt":"Which instrument measures air temperature?","options":["Anemometer","Barometer","Rain gauge","Thermometer"],"answer":3,"explanation":"A thermometer measures temperature."},
+  {"id":"S41","subject":"Science","prompt":"What type of cloud is commonly associated with thunderstorms?","options":["Cirrus","Cumulonimbus","Stratus","Thin fog"],"answer":1,"explanation":"Cumulonimbus clouds grow vertically and can produce heavy rain, lightning, and thunder."},
+  {"id":"S42","subject":"Science","prompt":"Which gas is most abundant in Earth's atmosphere?","options":["Carbon dioxide","Nitrogen","Oxygen","Water vapor"],"answer":1,"explanation":"Nitrogen makes up about 78% of Earth's atmosphere."},
+  {"id":"S43","subject":"Science","prompt":"What causes Earth's seasons?","options":["Changes in Earth's distance from the Sun","Earth's tilted axis as it revolves around the Sun","Monthly changes in the Moon","The Sun becoming hotter and cooler"],"answer":1,"explanation":"Earth's axial tilt changes the angle and duration of sunlight in each hemisphere during its orbit."},
+  {"id":"S44","subject":"Science","prompt":"Which object is at the center of our solar system?","options":["Earth","Jupiter","Moon","Sun"],"answer":3,"explanation":"The planets of our solar system orbit the Sun."},
+  {"id":"S45","subject":"Science","prompt":"Why does the Moon appear to shine?","options":["It reflects sunlight","It produces fire","It stores daylight","It is a star"],"answer":0,"explanation":"The Moon does not make visible light; its surface reflects sunlight."},
+  {"id":"S46","subject":"Science","prompt":"Which resource is renewable?","options":["Coal","Natural gas","Petroleum","Sunlight"],"answer":3,"explanation":"Sunlight is continually supplied, unlike fossil fuels that form over millions of years."},
+  {"id":"S47","subject":"Science","prompt":"Which action best reduces the amount of plastic waste sent to landfills?","options":["Burn disposable plastics outdoors","Choose reusable containers","Put plastic in rivers","Use a new plastic bag for every item"],"answer":1,"explanation":"Reusable containers reduce the need for single-use plastic items."},
+  {"id":"S48","subject":"Science","prompt":"What is the dependent variable in an experiment?","options":["The factor deliberately changed","The factor measured as a result","A factor kept constant","The prediction"],"answer":1,"explanation":"The dependent variable is the observed or measured response to the independent variable."},
+  {"id":"S49","subject":"Science","prompt":"Why is a control group useful in an experiment?","options":["It guarantees the hypothesis is correct","It provides a comparison","It removes the need for measurements","It changes every variable"],"answer":1,"explanation":"A control group provides a baseline for comparing the effect of the tested variable."},
+  {"id":"S50","subject":"Science","prompt":"Which tool is most appropriate for measuring 25 mL of water?","options":["Balance","Graduated cylinder","Meter stick","Thermometer"],"answer":1,"explanation":"A graduated cylinder is designed to measure liquid volume accurately."},
+  {"id":"E11","subject":"English","prompt":"Which sentence has correct subject-verb agreement?","options":["The basket of mangoes are heavy.","The basket of mangoes is heavy.","The basket of mangoes were heavy.","The basket of mangoes be heavy."],"answer":1,"explanation":"The subject is the singular noun 'basket,' so it takes the singular verb 'is.'"},
+  {"id":"E12","subject":"English","prompt":"Choose the correct verb: Neither of the answers ___ correct.","options":["are","is","were","have"],"answer":1,"explanation":"'Neither' is singular here, so it takes the singular verb 'is.'"},
+  {"id":"E13","subject":"English","prompt":"Which sentence uses the past perfect tense?","options":["I eat before class.","I had eaten before class began.","I have eaten now.","I will eat after class."],"answer":1,"explanation":"The past perfect uses 'had' plus a past participle to show an earlier past action."},
+  {"id":"E14","subject":"English","prompt":"Which sentence uses a pronoun correctly?","options":["Her and I finished the project.","Me and Carlo finished the project.","Carlo and I finished the project.","Carlo and me finished the project."],"answer":2,"explanation":"The subject pronoun 'I' is correct because Carlo and the speaker perform the action."},
+  {"id":"E15","subject":"English","prompt":"Choose the correct word: The puppy wagged ___ tail.","options":["it's","its","its'","it is"],"answer":1,"explanation":"'Its' is the possessive form; 'it's' means 'it is' or 'it has.'"},
+  {"id":"E16","subject":"English","prompt":"Which sentence uses commas correctly?","options":["After lunch we, visited the museum.","After lunch, we visited the museum.","After, lunch we visited the museum.","After lunch we visited, the museum."],"answer":1,"explanation":"A comma follows the introductory phrase 'After lunch.'"},
+  {"id":"E17","subject":"English","prompt":"Which sentence is punctuated correctly?","options":["Mina asked, “Are we leaving now?”","Mina asked “Are we leaving now”.","Mina asked, are we leaving now?","Mina asked “Are we leaving now?"],"answer":0,"explanation":"The direct question is enclosed in quotation marks and its question mark comes before the closing mark."},
+  {"id":"E18","subject":"English","prompt":"Which is a complete sentence?","options":["Because the rain stopped.","Running across the field.","The players returned to the field.","When the whistle sounded."],"answer":2,"explanation":"It has a subject and predicate and expresses a complete thought."},
+  {"id":"E19","subject":"English","prompt":"Which revision fixes the run-on sentence 'The bell rang we entered the room'?","options":["The bell rang, we entered the room.","The bell rang; we entered the room.","The bell rang because.","The bell rang entering the room."],"answer":1,"explanation":"A semicolon can join two closely related independent clauses."},
+  {"id":"E20","subject":"English","prompt":"Which word is an adjective in 'The narrow bridge crossed the river'?","options":["bridge","crossed","narrow","river"],"answer":2,"explanation":"'Narrow' describes the noun 'bridge,' so it is an adjective."},
+  {"id":"E21","subject":"English","prompt":"Which word is an adverb in 'The turtle moved slowly'?","options":["moved","slowly","the","turtle"],"answer":1,"explanation":"'Slowly' describes how the turtle moved, so it is an adverb."},
+  {"id":"E22","subject":"English","prompt":"In 'The keys are under the book,' which word is a preposition?","options":["are","book","keys","under"],"answer":3,"explanation":"'Under' shows the spatial relationship between the keys and the book."},
+  {"id":"E23","subject":"English","prompt":"Which word is a conjunction in 'I wanted to go, but it was late'?","options":["but","go","late","wanted"],"answer":0,"explanation":"'But' joins two contrasting independent clauses."},
+  {"id":"E24","subject":"English","prompt":"Which sentence is in the passive voice?","options":["Ana baked the bread.","The bread was baked by Ana.","Ana is baking bread.","Ana will bake bread."],"answer":1,"explanation":"In passive voice, the subject 'bread' receives the action."},
+  {"id":"E25","subject":"English","prompt":"What does the prefix 'pre-' mean in 'preview'?","options":["after","again","before","wrongly"],"answer":2,"explanation":"The prefix 'pre-' means before, so a preview is a viewing beforehand."},
+  {"id":"E26","subject":"English","prompt":"What does the suffix '-less' mean in 'careless'?","options":["full of","in a certain way","one who","without"],"answer":3,"explanation":"The suffix '-less' means without; careless means without sufficient care."},
+  {"id":"E27","subject":"English","prompt":"Which word is closest in meaning to 'reluctant'?","options":["eager","hesitant","noisy","proud"],"answer":1,"explanation":"A reluctant person is hesitant or unwilling to act."},
+  {"id":"E28","subject":"English","prompt":"Which word is the opposite of 'expand'?","options":["contract","extend","increase","stretch"],"answer":0,"explanation":"To contract is to become smaller, the opposite of expanding."},
+  {"id":"E29","subject":"English","prompt":"In 'The desert was arid; almost no rain fell all year,' what does 'arid' mean?","options":["crowded","dry","fertile","freezing"],"answer":1,"explanation":"The clue about almost no rain shows that 'arid' means very dry."},
+  {"id":"E30","subject":"English","prompt":"Which word has the most positive connotation?","options":["childish","curious","nosy","prying"],"answer":1,"explanation":"'Curious' often suggests a positive desire to learn, while the others can imply unwelcome behavior."},
+  {"id":"E31","subject":"English","prompt":"What figure of speech is used in 'The classroom was a zoo'?","options":["Hyperbole","Metaphor","Onomatopoeia","Simile"],"answer":1,"explanation":"The sentence directly compares the classroom to a zoo without using 'like' or 'as.'"},
+  {"id":"E32","subject":"English","prompt":"What figure of speech is used in 'The leaves danced in the wind'?","options":["Alliteration","Irony","Personification","Simile"],"answer":2,"explanation":"The leaves are given the human action of dancing."},
+  {"id":"E33","subject":"English","prompt":"Which phrase contains alliteration?","options":["cold as ice","green grass grows","the clock ticked","very bright"],"answer":1,"explanation":"'Green grass grows' repeats the initial g sound."},
+  {"id":"E34","subject":"English","prompt":"What is the rhyme scheme of these line endings: light, day, night, play?","options":["AABB","ABAB","ABBA","AAAA"],"answer":1,"explanation":"'Light' rhymes with 'night,' and 'day' rhymes with 'play,' giving ABAB."},
+  {"id":"E35","subject":"English","prompt":"Read: 'Mangroves shelter young fish and reduce shoreline erosion. Their roots also trap sediment.' What is the main idea?","options":["All fish live in mangroves.","Mangroves provide several benefits to coastal ecosystems.","Sediment always harms shorelines.","Young fish eat mangrove roots."],"answer":1,"explanation":"Both details describe ways mangroves support and protect coastal ecosystems."},
+  {"id":"E36","subject":"English","prompt":"Read: 'Leo checked the forecast, packed a raincoat, and sealed his phone in a plastic pouch.' What can be inferred?","options":["Leo expected wet weather.","Leo planned to buy a phone.","Leo wanted a sunny day.","Leo was staying indoors."],"answer":0,"explanation":"The raincoat and waterproof pouch imply that Leo expected rain."},
+  {"id":"E37","subject":"English","prompt":"Read: 'First, rinse the rice. Next, add water. Finally, turn on the cooker.' What text structure is used?","options":["Cause and effect","Chronological sequence","Compare and contrast","Problem and solution"],"answer":1,"explanation":"The signal words show steps arranged in time order."},
+  {"id":"E38","subject":"English","prompt":"Which transition best completes the sentence? 'The route was longer; ___, it was safer.'","options":["for example","however","similarly","therefore"],"answer":1,"explanation":"'However' signals the contrast between being longer and being safer."},
+  {"id":"E39","subject":"English","prompt":"Which detail best supports the claim that regular reading builds vocabulary?","options":["Books come in many sizes.","Readers encounter unfamiliar words in meaningful contexts.","Some libraries close on holidays.","Stories may have illustrations."],"answer":1,"explanation":"Meeting words in context directly explains how reading can increase vocabulary."},
+  {"id":"E40","subject":"English","prompt":"Which source is most reliable for a report on Philippine volcanoes?","options":["An anonymous social media post","A fictional adventure novel","A PHIVOLCS educational page","An advertisement for hiking shoes"],"answer":2,"explanation":"PHIVOLCS is the Philippine government agency responsible for volcano and earthquake information."},
+  {"id":"E41","subject":"English","prompt":"Which sentence states an opinion?","options":["Earth has one natural moon.","The library opens at 8 a.m.","This novel is the most exciting book in the series.","Water freezes at 0°C under standard pressure."],"answer":2,"explanation":"Calling a novel 'the most exciting' is a judgment that can differ among readers."},
+  {"id":"E42","subject":"English","prompt":"What is the author's purpose in a manual explaining how to assemble a chair?","options":["To entertain","To instruct","To persuade","To tell a legend"],"answer":1,"explanation":"A manual gives directions so the reader can complete a task."},
+  {"id":"E43","subject":"English","prompt":"A story is told by a narrator who uses 'I' and participates in the events. What point of view is this?","options":["First person","Second person","Third-person limited","Third-person omniscient"],"answer":0,"explanation":"A participating narrator who uses 'I' tells the story in first person."},
+  {"id":"E44","subject":"English","prompt":"Which sentence best states a theme?","options":["A girl finds a lost wallet.","Honesty can require courage.","The story happens in a market.","The wallet is brown."],"answer":1,"explanation":"A theme expresses a broader message, not merely a plot detail."},
+  {"id":"E45","subject":"English","prompt":"Which sentence uses parallel structure?","options":["Nico enjoys swimming, to cycle, and hiking.","Nico enjoys swimming, cycling, and hiking.","Nico enjoys to swim, cycling, and hikes.","Nico enjoys swim, cycle, and hiking."],"answer":1,"explanation":"All three items use matching gerund forms: swimming, cycling, and hiking."},
+  {"id":"E46","subject":"English","prompt":"Which revision is most concise?","options":["At this point in time, we are ready.","Due to the fact that we practiced, we improved.","We are ready now.","We made an improvement that was better."],"answer":2,"explanation":"'We are ready now' states the same idea directly without unnecessary words."},
+  {"id":"E47","subject":"English","prompt":"Which sentence uses 'fewer' correctly?","options":["We need fewer water.","Fewer students were absent today.","There is fewer traffic now.","She has fewer patience."],"answer":1,"explanation":"Use 'fewer' with countable nouns such as students."},
+  {"id":"E48","subject":"English","prompt":"Choose the correct comparative form: This puzzle is ___ than the last one.","options":["difficult","difficulter","more difficult","most difficult"],"answer":2,"explanation":"The comparative form of the multisyllable adjective 'difficult' is 'more difficult.'"},
+  {"id":"E49","subject":"English","prompt":"Which sentence uses a colon correctly?","options":["Bring: a pencil, ruler, and notebook.","Bring three items: a pencil, ruler, and notebook.","Bring three: items a pencil, ruler, and notebook.","Bring three items a pencil: ruler, and notebook."],"answer":1,"explanation":"A colon may introduce a list after a complete independent clause."},
+  {"id":"E50","subject":"English","prompt":"Which is the best topic sentence for a paragraph about conserving water at home?","options":["Water is transparent.","Families can conserve water through simple daily habits.","Yesterday was warm.","Many houses have windows."],"answer":1,"explanation":"It clearly introduces the paragraph's controlling idea: practical household water conservation."},
+  {"id":"R11","subject":"Reasoning","prompt":"What number comes next: 2, 6, 12, 20, 30, ...?","options":["36","40","42","44"],"answer":2,"explanation":"The differences are 4, 6, 8, and 10; adding the next difference, 12, gives 42."},
+  {"id":"R12","subject":"Reasoning","prompt":"What number comes next: 81, 27, 9, 3, ...?","options":["0","1","2","6"],"answer":1,"explanation":"Each term is the previous term divided by 3, so 3 ÷ 3 = 1."},
+  {"id":"R13","subject":"Reasoning","prompt":"What number comes next: 5, 8, 14, 23, 35, ...?","options":["47","48","50","53"],"answer":2,"explanation":"The increases are 3, 6, 9, and 12; the next increase is 15, giving 50."},
+  {"id":"R14","subject":"Reasoning","prompt":"What number comes next: 1, 1, 2, 3, 5, 8, ...?","options":["11","12","13","16"],"answer":2,"explanation":"Each term is the sum of the previous two, so 5 + 8 = 13."},
+  {"id":"R15","subject":"Reasoning","prompt":"What number completes the pattern: 64, 32, 16, 8, ___?","options":["2","4","6","12"],"answer":1,"explanation":"Each number is half the preceding number, so half of 8 is 4."},
+  {"id":"R16","subject":"Reasoning","prompt":"What letter comes next: A, C, F, J, O, ...?","options":["S","T","U","V"],"answer":2,"explanation":"The jumps increase by one letter each time: +2, +3, +4, +5, then +6 from O to U."},
+  {"id":"R17","subject":"Reasoning","prompt":"What letter comes next: Z, W, T, Q, ...?","options":["M","N","O","P"],"answer":1,"explanation":"The pattern moves backward three letters each time, so Q is followed by N."},
+  {"id":"R18","subject":"Reasoning","prompt":"Which item does not belong?","options":["Cube","Rectangle","Square","Triangle"],"answer":0,"explanation":"A cube is three-dimensional; the other shapes are two-dimensional."},
+  {"id":"R19","subject":"Reasoning","prompt":"Which number does not belong with the others?","options":["8","27","64","100"],"answer":3,"explanation":"8, 27, and 64 are perfect cubes; 100 is not."},
+  {"id":"R20","subject":"Reasoning","prompt":"Book is to reading as fork is to ___.","options":["cooking","drawing","eating","writing"],"answer":2,"explanation":"A book is commonly used for reading, and a fork is commonly used for eating."},
+  {"id":"R21","subject":"Reasoning","prompt":"Puppy is to dog as kitten is to ___.","options":["cat","cub","goat","rabbit"],"answer":0,"explanation":"A puppy is a young dog, and a kitten is a young cat."},
+  {"id":"R22","subject":"Reasoning","prompt":"Thermometer is to temperature as scale is to ___.","options":["distance","speed","time","weight"],"answer":3,"explanation":"A thermometer measures temperature, while a scale measures weight."},
+  {"id":"R23","subject":"Reasoning","prompt":"All naras are trees. All trees are plants. Which conclusion must be true?","options":["All naras are plants.","All plants are naras.","No tree is a nara.","Some plants are not trees."],"answer":0,"explanation":"If every nara is a tree and every tree is a plant, every nara must be a plant."},
+  {"id":"R24","subject":"Reasoning","prompt":"No reptiles have fur. A snake is a reptile. Which conclusion must be true?","options":["All animals without fur are snakes.","No snake has fur.","Some snakes have fur.","Snakes are mammals."],"answer":1,"explanation":"Because snakes are reptiles and no reptile has fur, no snake has fur."},
+  {"id":"R25","subject":"Reasoning","prompt":"Some musicians are teachers. All teachers are readers. Which conclusion must be true?","options":["All musicians are readers.","No musician is a reader.","Some musicians are readers.","Some readers are not teachers."],"answer":2,"explanation":"The musicians who are teachers must also be readers."},
+  {"id":"R26","subject":"Reasoning","prompt":"If it rains, the field gets wet. The field is not wet. What follows logically?","options":["It did not rain.","It rained lightly.","The field was covered.","Nothing can be concluded."],"answer":0,"explanation":"By contraposition, if rain guarantees a wet field, a field that is not wet means it did not rain."},
+  {"id":"R27","subject":"Reasoning","prompt":"Every member of the chess club knows the rules. Pia is a chess club member. What must be true?","options":["Pia invented chess.","Pia knows the rules.","Pia wins every game.","Pia teaches the club."],"answer":1,"explanation":"Pia has the property stated for every club member: knowing the rules."},
+  {"id":"R28","subject":"Reasoning","prompt":"Ana is taller than Ben. Ben is taller than Carlo. Who is shortest?","options":["Ana","Ben","Carlo","Cannot be determined"],"answer":2,"explanation":"The order from tallest to shortest is Ana, Ben, Carlo."},
+  {"id":"R29","subject":"Reasoning","prompt":"Lia finished before Miko but after Nena. Who finished first among the three?","options":["Lia","Miko","Nena","They tied"],"answer":2,"explanation":"Nena finished before Lia, who finished before Miko."},
+  {"id":"R30","subject":"Reasoning","prompt":"Four students—J, K, L, and M—stand in a line. J is before K, K is before L, and L is before M. Who is second?","options":["J","K","L","M"],"answer":1,"explanation":"The required order is J, K, L, M, making K second."},
+  {"id":"R31","subject":"Reasoning","prompt":"A clock shows 3:00. What is the smaller angle between its hands?","options":["0°","45°","90°","180°"],"answer":2,"explanation":"At 3:00 the minute hand points to 12 and the hour hand to 3, forming a right angle."},
+  {"id":"R32","subject":"Reasoning","prompt":"If today is Tuesday, what day will it be 10 days from today?","options":["Thursday","Friday","Saturday","Sunday"],"answer":1,"explanation":"Ten days is one week plus three days; three days after Tuesday is Friday."},
+  {"id":"R33","subject":"Reasoning","prompt":"A bus leaves every 20 minutes. One left at 8:10 a.m. When does the third bus after it leave?","options":["8:30 a.m.","8:50 a.m.","9:10 a.m.","9:30 a.m."],"answer":2,"explanation":"Three 20-minute intervals total 60 minutes, so the third later bus leaves at 9:10 a.m."},
+  {"id":"R34","subject":"Reasoning","prompt":"Mara faces north, turns right, then turns right again. Which direction is she facing?","options":["East","North","South","West"],"answer":2,"explanation":"The first right turn faces east; the second faces south."},
+  {"id":"R35","subject":"Reasoning","prompt":"Paolo walks 3 blocks east and then 3 blocks west. Where is he relative to his starting point?","options":["3 blocks east","3 blocks west","6 blocks east","At the starting point"],"answer":3,"explanation":"The equal movements in opposite directions cancel, returning him to the start."},
+  {"id":"R36","subject":"Reasoning","prompt":"Ava faces west and turns 90° counterclockwise. Which direction does she face?","options":["East","North","South","West"],"answer":2,"explanation":"Turning counterclockwise from west points south."},
+  {"id":"R37","subject":"Reasoning","prompt":"In a code, each letter is moved one step backward in the alphabet. How is FISH coded?","options":["EHRG","GJTI","EHSG","FHRG"],"answer":0,"explanation":"F→E, I→H, S→R, and H→G, producing EHRG."},
+  {"id":"R38","subject":"Reasoning","prompt":"If RED is coded as 18-5-4 using alphabet positions, how is BLUE coded?","options":["2-11-20-5","2-12-20-5","2-12-21-5","3-12-21-6"],"answer":2,"explanation":"B, L, U, and E are the 2nd, 12th, 21st, and 5th letters."},
+  {"id":"R39","subject":"Reasoning","prompt":"If ▲ means add 3, what is the result of applying ▲ twice to 5?","options":["8","10","11","15"],"answer":2,"explanation":"Starting at 5, add 3 twice: 5 + 3 + 3 = 11."},
+  {"id":"R40","subject":"Reasoning","prompt":"A machine changes 2 to 7, 4 to 11, and 6 to 15. Which rule fits all three pairs?","options":["Add 5","Multiply by 2 then add 3","Multiply by 3 then subtract 1","Square then add 3"],"answer":1,"explanation":"For each input x, 2x + 3 gives the shown output."},
+  {"id":"R41","subject":"Reasoning","prompt":"Three boxes are labeled Apples, Oranges, and Mixed, but every label is wrong. Which box should you sample first to determine all labels?","options":["The box labeled Apples","The box labeled Mixed","The heaviest box","Any box; labels give no information"],"answer":1,"explanation":"Because every label is wrong, the box labeled Mixed contains only one fruit type; one sample identifies it and allows the others to be deduced."},
+  {"id":"R42","subject":"Reasoning","prompt":"There are 5 red socks and 5 blue socks in a dark drawer. What is the fewest socks you must take to guarantee a matching-color pair?","options":["2","3","5","6"],"answer":1,"explanation":"The first two could be different colors, but the third must match one of them."},
+  {"id":"R43","subject":"Reasoning","prompt":"A farmer has chickens and goats totaling 12 heads and 34 legs. How many goats are there?","options":["4","5","6","7"],"answer":1,"explanation":"If all 12 were chickens there would be 24 legs; the extra 10 legs represent five goats replacing chickens."},
+  {"id":"R44","subject":"Reasoning","prompt":"Which statement is sufficient to prove that a whole number n is even?","options":["n is greater than 2.","n can be divided by 2 with no remainder.","n ends in 5.","n is a multiple of 3."],"answer":1,"explanation":"Divisibility by 2 with no remainder is the definition of an even whole number."},
+  {"id":"R45","subject":"Reasoning","prompt":"A bag contains only red and green beads. Which fact is enough to guarantee that more than half are red?","options":["There are 8 red beads.","There are fewer green beads than red beads.","There is at least one red bead.","There are 20 beads total."],"answer":1,"explanation":"With only two colors, having more red than green means red beads make up more than half."},
+  {"id":"R46","subject":"Reasoning","prompt":"Exactly one of these statements is true: 'The key is in box A' and 'The key is in box B.' If the key is not in box A, where is it?","options":["Box A","Box B","Both boxes","Neither box"],"answer":1,"explanation":"The first statement is false, so the second must be the one true statement."},
+  {"id":"R47","subject":"Reasoning","prompt":"Which pair follows the same rule as 3 → 10 and 5 → 26?","options":["2 → 4","4 → 17","6 → 30","7 → 42"],"answer":1,"explanation":"The rule is output = input² + 1; 4² + 1 = 17."},
+  {"id":"R48","subject":"Reasoning","prompt":"A shape pattern repeats circle, square, triangle. What is the 11th shape?","options":["Circle","Square","Triangle","Cannot be determined"],"answer":1,"explanation":"Eleven leaves a remainder of 2 when divided by 3, so it matches the second shape, the square."},
+  {"id":"R49","subject":"Reasoning","prompt":"Five runners finish a race. Bea is 2nd and Dani is immediately after Bea. What place is Dani?","options":["1st","3rd","4th","5th"],"answer":1,"explanation":"Immediately after second place is third place."},
+  {"id":"R50","subject":"Reasoning","prompt":"A cube has all six faces painted, then is cut into 27 equal smaller cubes. How many small cubes have no paint?","options":["0","1","6","8"],"answer":1,"explanation":"A 3×3×3 cube has one small cube completely inside, and that cube has no painted face."}
+]
