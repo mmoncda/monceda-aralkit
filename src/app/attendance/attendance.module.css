@@ -1,0 +1,527 @@
+.page {
+  display: grid;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.hero,
+.csvPanel,
+.formCard,
+.tableCard,
+.stats article {
+  border: 1px solid rgba(15, 23, 42, .08);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, .04);
+}
+
+.hero {
+  padding: 1.5rem;
+}
+
+.hero h1 {
+  margin: .3rem 0 .5rem;
+}
+
+.hero p,
+.csvPanel p {
+  margin: 0;
+  color: #64748b;
+}
+
+.eyebrow,
+.miniLabel {
+  color: #2563eb;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: .75rem;
+}
+
+.stats article {
+  display: grid;
+  gap: .2rem;
+  padding: .9rem 1rem;
+}
+
+.stats span {
+  color: #64748b;
+  font-size: .75rem;
+}
+
+.stats strong {
+  font-size: 1.4rem;
+}
+
+.csvPanel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+}
+
+.csvPanel h2,
+.formCard h2,
+.tableCard h2 {
+  margin: .15rem 0 .25rem;
+}
+
+.csvActions {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.csvActions button,
+.csvActions label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: .55rem .75rem;
+  border: 0;
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font: inherit;
+  font-size: .76rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.csvActions label {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.csvActions button:disabled {
+  opacity: .45;
+  cursor: default;
+}
+
+.formCard {
+  padding: 1.1rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr auto;
+  gap: .65rem;
+  align-items: end;
+  margin-top: .8rem;
+}
+
+.form label {
+  display: grid;
+  gap: .3rem;
+  font-size: .74rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+.form input,
+.form select,
+.filters input,
+.filters select {
+  width: 100%;
+  min-height: 38px;
+  box-sizing: border-box;
+  border: 1px solid #dbe3ef;
+  border-radius: 10px;
+  background: #fff;
+  padding: .55rem .7rem;
+  color: #0f172a;
+  font: inherit;
+}
+
+.form button {
+  min-height: 38px;
+  padding: .55rem .8rem;
+  border: 0;
+  border-radius: 10px;
+  background: #2563eb;
+  color: #fff;
+  font: inherit;
+  font-size: .75rem;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tableCard {
+  padding: 1.1rem;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.filters {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+
+.filters input {
+  min-width: 250px;
+}
+
+.filters select {
+  width: auto;
+}
+
+.clearButton {
+  min-height: 38px;
+  padding: .45rem .6rem;
+  border: 0;
+  border-radius: 9px;
+  background: #fff1f2;
+  color: #be123c;
+  font: inherit;
+  font-size: .65rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  margin-top: .75rem;
+  scrollbar-width: none;
+}
+
+.tableWrap::-webkit-scrollbar {
+  display: none;
+}
+
+.tableWrap table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableWrap th,
+.tableWrap td {
+  padding: .65rem .6rem;
+  border-bottom: 1px solid #eef2f7;
+  text-align: left;
+  font-size: .76rem;
+}
+
+.tableWrap th {
+  color: #64748b;
+  font-size: .65rem;
+  text-transform: uppercase;
+}
+
+.status {
+  display: inline-flex;
+  padding: .25rem .5rem;
+  border-radius: 999px;
+  font-size: .7rem;
+  font-weight: 800;
+}
+
+.present {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.absent {
+  background: #fff1f2;
+  color: #be123c;
+}
+
+.late {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.deleteButton {
+  border: 0;
+  background: transparent;
+  color: #e11d48;
+  font: inherit;
+  font-size: .7rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.empty {
+  margin-top: .8rem;
+  padding: 1.5rem;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  text-align: center;
+  color: #64748b;
+}
+
+.note {
+  margin: .7rem 0 0;
+  color: #94a3b8;
+  font-size: .7rem;
+}
+
+@media (max-width: 1000px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .csvPanel,
+  .toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .filters {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats,
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filters input,
+  .filters select {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .csvActions {
+    flex-direction: column;
+  }
+
+  .csvActions > * {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   ATTENDANCE TRACKER POLISH V1
+   ========================================================= */
+
+@media (min-width: 901px) {
+  .page {
+    gap: .8rem;
+  }
+
+  .hero {
+    padding: 1.2rem 1.35rem;
+  }
+
+  .hero h1 {
+    font-size: 1.15rem;
+    margin: .2rem 0 .35rem;
+  }
+
+  .hero p {
+    font-size: .8rem;
+  }
+
+  .stats {
+    gap: .6rem;
+  }
+
+  .stats article {
+    min-height: 66px;
+    padding: .75rem .85rem;
+  }
+
+  .stats span {
+    font-size: .68rem;
+  }
+
+  .stats strong {
+    font-size: 1.15rem;
+  }
+
+  .csvPanel {
+    padding: .8rem 1rem;
+  }
+
+  .csvPanel h2 {
+    font-size: .95rem;
+  }
+
+  .csvPanel p {
+    font-size: .73rem;
+  }
+
+  .csvActions {
+    gap: .4rem;
+  }
+
+  .csvActions button,
+  .csvActions label {
+    min-height: 34px;
+    padding: .45rem .65rem;
+    font-size: .7rem;
+  }
+
+  .formCard {
+    padding: .9rem 1rem;
+  }
+
+  .formCard h2 {
+    font-size: 1rem;
+  }
+
+  .form {
+    gap: .5rem;
+    margin-top: .65rem;
+    grid-template-columns:
+      minmax(210px, 2fr)
+      minmax(105px, .9fr)
+      minmax(110px, 1fr)
+      minmax(120px, 1fr)
+      minmax(110px, .9fr)
+      auto;
+  }
+
+  .form label {
+    font-size: .68rem;
+  }
+
+  .form input,
+  .form select {
+    min-height: 34px;
+    padding: .45rem .6rem;
+    font-size: .75rem;
+  }
+
+  .form button {
+    min-height: 34px;
+    padding: .45rem .7rem;
+    font-size: .68rem;
+    border-radius: 9px;
+  }
+
+  .tableCard {
+    padding: .9rem 1rem;
+  }
+
+  .toolbar {
+    gap: .7rem;
+  }
+
+  .toolbar h2 {
+    font-size: 1rem;
+  }
+
+  .filters {
+    gap: .4rem;
+  }
+
+  .filters input,
+  .filters select {
+    min-height: 34px;
+    padding: .45rem .6rem;
+    font-size: .72rem;
+  }
+
+  .filters input {
+    min-width: 235px;
+  }
+
+  .clearButton {
+    min-height: 34px;
+    padding: .35rem .45rem;
+    font-size: .58rem;
+    line-height: 1.05;
+  }
+
+  .empty {
+    margin-top: .65rem;
+    padding: 1.15rem;
+    font-size: .78rem;
+  }
+
+  .tableWrap {
+    margin-top: .6rem;
+  }
+
+  .tableWrap th,
+  .tableWrap td {
+    padding: .55rem .55rem;
+    font-size: .72rem;
+  }
+
+  .tableWrap th {
+    font-size: .6rem;
+  }
+
+  .status {
+    padding: .22rem .45rem;
+    font-size: .64rem;
+  }
+
+  .deleteButton {
+    font-size: .64rem;
+  }
+
+  .note {
+    margin-top: .55rem;
+    font-size: .66rem;
+  }
+}
+
+@media (min-width: 901px) {
+  .form button {
+    min-height: 32px !important;
+    height: 32px !important;
+    padding: .3rem .6rem !important;
+    font-size: .62rem !important;
+    line-height: 1 !important;
+    border-radius: 8px !important;
+    align-self: end;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 901px) {
+  .form button {
+    width: 118px !important;
+    min-width: 118px !important;
+    max-width: 118px !important;
+    min-height: 30px !important;
+    height: 30px !important;
+    padding: .25rem .4rem !important;
+    font-size: .56rem !important;
+    line-height: 1 !important;
+    border-radius: 7px !important;
+    justify-self: end;
+  }
+}
+
+@media (min-width: 901px) {
+  .form button {
+    width: 88px !important;
+    min-width: 88px !important;
+    max-width: 88px !important;
+    height: 30px !important;
+    min-height: 30px !important;
+    padding: .2rem .35rem !important;
+    font-size: .58rem !important;
+    border-radius: 7px !important;
+  }
+}

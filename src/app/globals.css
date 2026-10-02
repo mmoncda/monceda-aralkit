@@ -1058,3 +1058,387 @@ button:disabled {
   }
 
 }
+
+/* =========================================================
+   ARALKIT HOME TOOL GRID
+   Desktop: 3 columns
+   Tablet: 2 columns
+   Mobile: 1 column
+   ========================================================= */
+
+@media (min-width: 1100px) {
+  .tool-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 1rem !important;
+  }
+
+  .tool-card {
+    min-height: 205px;
+    padding: 1.35rem !important;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1099px) {
+  .tool-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .tool-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* =========================================================
+   ARALKIT HOME TOOL GRID
+   Desktop: 3 columns
+   Tablet: 2 columns
+   Mobile: 1 column
+   ========================================================= */
+
+@media (min-width: 1100px) {
+  .tool-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 1rem !important;
+  }
+
+  .tool-card {
+    min-height: 205px;
+    padding: 1.35rem !important;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1099px) {
+  .tool-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .tool-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* =========================================================
+   ARALKIT FOOTER + HOME BOTTOM SPACING POLISH
+   ========================================================= */
+
+@media (min-width: 701px) {
+  main {
+    padding-bottom: 1.25rem !important;
+  }
+
+  .tool-grid {
+    margin-bottom: 1.25rem !important;
+  }
+
+  footer {
+    margin-top: 0 !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    min-height: 0 !important;
+  }
+
+  footer nav,
+  footer .footer-links {
+    gap: 1rem !important;
+    margin-bottom: .45rem !important;
+  }
+
+  footer a {
+    font-size: .8rem !important;
+    font-weight: 700;
+  }
+
+  footer p {
+    margin: 0 !important;
+    font-size: .78rem !important;
+    line-height: 1.3 !important;
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    padding-bottom: 1rem !important;
+  }
+
+  footer {
+    padding-top: .9rem !important;
+    padding-bottom: .9rem !important;
+  }
+
+  footer a {
+    font-size: .78rem !important;
+  }
+
+  footer p {
+    font-size: .75rem !important;
+  }
+}
+
+/* =========================================================
+   COVER MAKER COMPACT POLISH V1
+   Desktop-focused, mobile-safe
+   ========================================================= */
+
+@media (min-width: 901px) {
+  .cover-page {
+    gap: 1rem !important;
+  }
+
+  .cover-controls {
+    max-width: 820px !important;
+  }
+
+  .cover-controls > h1 {
+    margin-top: .75rem !important;
+    margin-bottom: .45rem !important;
+  }
+
+  .cover-controls > p {
+    margin-bottom: 1rem !important;
+  }
+
+  .cover-controls .calculator {
+    padding: 1rem 1.1rem !important;
+    border-radius: 16px !important;
+  }
+
+  .cover-controls .calculator > h2 {
+    margin-top: 0 !important;
+    margin-bottom: .65rem !important;
+    font-size: 1rem !important;
+  }
+
+  .cover-controls .calculator > h2:nth-of-type(2) {
+    margin-top: 1rem !important;
+  }
+
+  .cover-templates {
+    gap: .55rem !important;
+    margin-bottom: .9rem !important;
+  }
+
+  .cover-template {
+    min-height: 40px !important;
+    height: 40px !important;
+    padding: .5rem .7rem !important;
+    border-radius: 9px !important;
+    font-size: .76rem !important;
+  }
+
+  .cover-fields {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: .65rem .8rem !important;
+  }
+
+  .cover-fields label {
+    gap: .3rem !important;
+    font-size: .72rem !important;
+  }
+
+  .cover-fields input {
+    min-height: 38px !important;
+    height: 38px !important;
+    padding: .5rem .7rem !important;
+    border-radius: 9px !important;
+    font-size: .78rem !important;
+  }
+
+  .cover-fields label:last-child {
+    grid-column: 1 / 2 !important;
+  }
+
+  .cover-controls .secondary-button {
+    margin-top: .8rem !important;
+    min-height: 36px !important;
+    padding: .5rem .75rem !important;
+    font-size: .72rem !important;
+    border-radius: 9px !important;
+  }
+
+  .cover-print-button {
+    margin-top: .7rem !important;
+  }
+
+  .cover-print-button .primary-button {
+    min-height: 38px !important;
+    padding: .55rem .85rem !important;
+    font-size: .75rem !important;
+    border-radius: 9px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .cover-template {
+    min-height: 42px;
+  }
+}
+
+/* =========================================================
+   ARALKIT COVER MAKER - THEME LIBRARY V2
+   ========================================================= */
+
+@media (min-width: 901px) {
+  .cover-templates {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: .55rem !important;
+  }
+}
+
+.cover-template {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: .55rem !important;
+  text-align: left !important;
+}
+
+.cover-template-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: rgba(255,255,255,.75);
+  font-size: 1rem;
+}
+
+.cover-template-copy {
+  display: grid;
+  min-width: 0;
+  gap: .08rem;
+}
+
+.cover-template-copy strong {
+  overflow: hidden;
+  font-size: .72rem;
+  line-height: 1.1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cover-template-copy small {
+  color: #64748b;
+  font-size: .57rem;
+  font-weight: 600;
+}
+
+.cover-template.selected .cover-template-copy small {
+  color: inherit;
+  opacity: .72;
+}
+
+/* SCIENCE */
+.cover-science {
+  background:
+    radial-gradient(circle at 82% 16%, rgba(34,211,238,.20), transparent 25%),
+    radial-gradient(circle at 15% 82%, rgba(59,130,246,.15), transparent 27%),
+    linear-gradient(145deg, #f8fdff, #e8f8ff);
+  border-color: #38bdf8;
+}
+
+.cover-science .cover-symbol {
+  background: #e0f2fe;
+}
+
+.cover-science .cover-eyebrow,
+.cover-science .cover-subject {
+  color: #0284c7;
+}
+
+.cover-science .cover-center h2 {
+  color: #0c4a6e;
+}
+
+/* MATHEMATICS */
+.cover-math {
+  background:
+    linear-gradient(rgba(37,99,235,.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37,99,235,.055) 1px, transparent 1px),
+    linear-gradient(145deg, #ffffff, #eff6ff);
+  background-size: 26px 26px, 26px 26px, auto;
+  border-color: #2563eb;
+}
+
+/* ICT */
+.cover-ict {
+  background:
+    radial-gradient(circle at 80% 12%, rgba(34,211,238,.17), transparent 24%),
+    linear-gradient(145deg, #07111f, #101f35);
+  border-color: #22d3ee;
+  color: #e2e8f0;
+}
+
+.cover-ict .cover-school,
+.cover-ict .cover-info span,
+.cover-ict .cover-date {
+  color: #94a3b8;
+}
+
+.cover-ict .cover-eyebrow,
+.cover-ict .cover-subject {
+  color: #22d3ee;
+}
+
+.cover-ict .cover-center h2,
+.cover-ict .cover-info strong {
+  color: #f8fafc;
+}
+
+/* CREATIVE ARTS */
+.cover-arts {
+  background:
+    radial-gradient(circle at 15% 15%, rgba(236,72,153,.16), transparent 25%),
+    radial-gradient(circle at 88% 18%, rgba(139,92,246,.15), transparent 28%),
+    radial-gradient(circle at 75% 85%, rgba(59,130,246,.12), transparent 30%),
+    #fff;
+  border-color: #a855f7;
+}
+
+/* RESEARCH */
+.cover-research {
+  background: #ffffff;
+  border: 2px solid #1e3a5f;
+}
+
+.cover-research .cover-top {
+  border-bottom: 2px solid #1e3a5f;
+  padding-bottom: 1rem;
+}
+
+.cover-research .cover-center h2 {
+  color: #0f172a;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* PORTFOLIO */
+.cover-portfolio {
+  background:
+    linear-gradient(160deg, rgba(13,148,136,.11), transparent 44%),
+    linear-gradient(340deg, rgba(14,116,144,.08), transparent 38%),
+    #fbffff;
+  border-color: #0d9488;
+}
+
+/* Responsive theme picker */
+@media (min-width: 601px) and (max-width: 900px) {
+  .cover-templates {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .cover-templates {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: .45rem !important;
+  }
+
+  .cover-template-copy strong {
+    font-size: .67rem;
+  }
+}

@@ -1,0 +1,1044 @@
+.page {
+  display: grid;
+  gap: 1.25rem;
+  padding-bottom: 3rem;
+}
+
+.hero {
+  padding: 2rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.14), transparent 35%),
+    linear-gradient(135deg, #ffffff, #f8fbff);
+}
+
+.hero h1 {
+  margin: .35rem 0 .6rem;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  line-height: 1;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: 0;
+  color: #64748b;
+  line-height: 1.65;
+}
+
+.eyebrow,
+.miniLabel {
+  color: #2563eb;
+  font-size: .74rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .9rem;
+}
+
+.stats article,
+.formCard,
+.rankingCard,
+.tableCard {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.05);
+}
+
+.stats article {
+  display: grid;
+  gap: .25rem;
+  padding: 1rem 1.15rem;
+}
+
+.stats span {
+  color: #64748b;
+  font-size: .82rem;
+}
+
+.stats strong {
+  font-size: 1.65rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, .65fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.formCard,
+.rankingCard,
+.tableCard {
+  padding: 1.25rem;
+}
+
+.cardHeader,
+.tableToolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cardHeader h2,
+.tableToolbar h2 {
+  margin: .15rem 0 0;
+}
+
+.formCard {
+  display: grid;
+  gap: 1rem;
+}
+
+.formCard label {
+  display: grid;
+  gap: .4rem;
+  color: #334155;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.formCard input,
+.formCard select,
+.search {
+  width: 100%;
+  min-height: 42px;
+  box-sizing: border-box;
+  border: 1px solid #dbe3ef;
+  border-radius: 11px;
+  background: #fff;
+  padding: .7rem .8rem;
+  color: #0f172a;
+  font: inherit;
+  outline: none;
+}
+
+.formCard input:focus,
+.formCard select:focus,
+.search:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, .1);
+}
+
+.twoColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .8rem;
+}
+
+.subjectGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .8rem;
+}
+
+.primaryButton,
+.secondaryButton,
+.dangerButton,
+.deleteButton {
+  border: 0;
+  border-radius: 11px;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.primaryButton {
+  min-height: 44px;
+  padding: .75rem 1rem;
+  background: #2563eb;
+  color: #fff;
+}
+
+.secondaryButton {
+  padding: .65rem .85rem;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.dangerButton {
+  min-height: 42px;
+  padding: .65rem .85rem;
+  background: #fff1f2;
+  color: #be123c;
+}
+
+.secondaryButton:disabled,
+.dangerButton:disabled {
+  opacity: .45;
+  cursor: default;
+}
+
+.podium {
+  display: grid;
+  gap: .7rem;
+  margin-top: 1rem;
+}
+
+.podium article {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: .75rem;
+  align-items: center;
+  padding: .9rem;
+  border-radius: 14px;
+  background: #f8fafc;
+}
+
+.rankBadge {
+  grid-row: 1 / 3;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e0ecff;
+  color: #1d4ed8;
+  font-weight: 900;
+}
+
+.podium small {
+  color: #64748b;
+}
+
+.tableCard {
+  overflow: hidden;
+}
+
+.toolbarActions {
+  display: flex;
+  gap: .65rem;
+  align-items: center;
+}
+
+.search {
+  min-width: 270px;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.tableWrap table {
+  width: 100%;
+  min-width: 1180px;
+  border-collapse: collapse;
+}
+
+.tableWrap th,
+.tableWrap td {
+  padding: .75rem .7rem;
+  border-bottom: 1px solid #eef2f7;
+  text-align: left;
+  white-space: nowrap;
+  font-size: .8rem;
+}
+
+.tableWrap th {
+  color: #64748b;
+  font-size: .7rem;
+  letter-spacing: .025em;
+  text-transform: uppercase;
+}
+
+.average {
+  display: inline-flex;
+  border-radius: 999px;
+  background: #ecfdf5;
+  padding: .32rem .55rem;
+  color: #047857;
+  font-weight: 900;
+}
+
+.deleteButton {
+  padding: .4rem .6rem;
+  background: transparent;
+  color: #e11d48;
+}
+
+.emptyState {
+  margin-top: 1rem;
+  border: 1px dashed #cbd5e1;
+  border-radius: 14px;
+  padding: 2rem 1rem;
+  color: #64748b;
+  text-align: center;
+}
+
+.storageNote {
+  margin: 1rem 0 0;
+  color: #94a3b8;
+  font-size: .72rem;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .subjectGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tableToolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .toolbarActions {
+    align-items: stretch;
+  }
+
+  .search {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 1.35rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .twoColumns,
+  .subjectGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cardHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .toolbarActions {
+    flex-direction: column;
+  }
+}
+
+.csvPanel,
+.previewCard {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.05);
+}
+
+.csvPanel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+}
+
+.csvPanel h2,
+.previewCard h2 {
+  margin: .15rem 0 .35rem;
+}
+
+.csvPanel p {
+  margin: 0;
+  color: #64748b;
+  font-size: .82rem;
+}
+
+.csvActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+  justify-content: flex-end;
+}
+
+.importButton {
+  min-height: 38px;
+  padding: .65rem .85rem;
+  border: 0;
+  border-radius: 11px;
+  background: #ecfdf5;
+  color: #047857;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.previewCard {
+  padding: 1.25rem;
+}
+
+.previewHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.previewClose {
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 10px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.previewStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .7rem;
+  margin-top: 1rem;
+}
+
+.previewStats article {
+  display: grid;
+  gap: .2rem;
+  padding: .85rem;
+  border-radius: 14px;
+  background: #f8fafc;
+}
+
+.previewStats span {
+  color: #64748b;
+  font-size: .75rem;
+}
+
+.previewStats strong {
+  font-size: 1.35rem;
+}
+
+.rejectedBox {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #fecdd3;
+  border-radius: 14px;
+  background: #fff7f8;
+}
+
+.rejectedHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.rejectedHeader p {
+  margin: .2rem 0 0;
+  color: #9f1239;
+  font-size: .78rem;
+}
+
+.rejectDownload {
+  align-self: flex-start;
+  border: 0;
+  border-radius: 10px;
+  background: #ffe4e6;
+  padding: .55rem .75rem;
+  color: #be123c;
+  font: inherit;
+  font-size: .75rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.rejectList {
+  display: grid;
+  gap: .45rem;
+  margin-top: .8rem;
+}
+
+.rejectItem {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: .6rem;
+  padding: .55rem .65rem;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, .8);
+  font-size: .76rem;
+}
+
+.rejectItem span {
+  color: #881337;
+}
+
+.moreErrors {
+  margin: .2rem 0 0;
+  color: #9f1239;
+  font-size: .75rem;
+  font-weight: 700;
+}
+
+.previewActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: .65rem;
+  margin-top: 1rem;
+}
+
+.cancelButton {
+  min-height: 44px;
+  padding: .75rem 1rem;
+  border: 0;
+  border-radius: 11px;
+  background: #f1f5f9;
+  color: #475569;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.primaryButton:disabled {
+  opacity: .45;
+  cursor: default;
+}
+
+@media (max-width: 900px) {
+  .csvPanel {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .csvActions {
+    justify-content: stretch;
+  }
+
+  .csvActions > * {
+    flex: 1 1 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .previewStats {
+    grid-template-columns: 1fr;
+  }
+
+  .rejectedHeader {
+    flex-direction: column;
+  }
+
+  .rejectDownload {
+    width: 100%;
+  }
+
+  .rejectItem {
+    grid-template-columns: 1fr;
+    gap: .15rem;
+  }
+
+  .previewActions {
+    flex-direction: column-reverse;
+  }
+
+  .previewActions > * {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   PERFORMANCE TRACKER POLISH V1
+   Compact desktop refinement only
+   ========================================================= */
+
+@media (min-width: 901px) {
+  .page {
+    gap: 1rem;
+  }
+
+  .stats {
+    gap: .75rem;
+  }
+
+  .stats article {
+    padding: .9rem 1rem;
+    min-height: 78px;
+  }
+
+  .layout {
+    gap: .85rem;
+    grid-template-columns: minmax(0, 1.45fr) minmax(280px, .55fr);
+  }
+
+  .formCard,
+  .rankingCard,
+  .tableCard,
+  .csvPanel,
+  .previewCard {
+    border-radius: 18px;
+  }
+
+  .formCard {
+    gap: .8rem;
+    padding: 1.1rem 1.15rem;
+  }
+
+  .formCard label {
+    gap: .3rem;
+    font-size: .76rem;
+  }
+
+  .formCard input,
+  .formCard select {
+    min-height: 38px;
+    padding: .58rem .72rem;
+    border-radius: 10px;
+  }
+
+  .twoColumns {
+    gap: .7rem;
+  }
+
+  .subjectGrid {
+    gap: .65rem;
+  }
+
+  .primaryButton {
+    min-height: 40px;
+    padding: .6rem .9rem;
+  }
+
+  .rankingCard {
+    padding: 1.05rem;
+  }
+
+  .rankingCard .cardHeader {
+    margin-bottom: .7rem;
+  }
+
+  .podium {
+    gap: .55rem;
+    margin-top: .6rem;
+  }
+
+  .podium article {
+    min-height: 54px;
+    padding: .7rem .8rem;
+    border-radius: 12px;
+  }
+
+  .rankBadge {
+    width: 36px;
+    height: 36px;
+    font-size: .82rem;
+  }
+
+  .podium strong {
+    font-size: .88rem;
+  }
+
+  .podium small {
+    font-size: .72rem;
+  }
+
+  .tableCard {
+    padding: 1.05rem 1.15rem .9rem;
+  }
+
+  .tableToolbar {
+    margin-bottom: .35rem;
+  }
+
+  .toolbarActions {
+    gap: .5rem;
+  }
+
+  .search {
+    min-width: 250px;
+    min-height: 38px;
+    padding: .55rem .7rem;
+  }
+
+  .dangerButton {
+    min-height: 38px;
+    padding: .55rem .75rem;
+  }
+
+  .tableWrap {
+    margin-top: .65rem;
+    scrollbar-width: none;
+  }
+
+  .tableWrap::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  .tableWrap th,
+  .tableWrap td {
+    padding: .62rem .6rem;
+    font-size: .76rem;
+  }
+
+  .tableWrap th {
+    font-size: .66rem;
+  }
+
+  .average {
+    padding: .26rem .48rem;
+    font-size: .72rem;
+  }
+
+  .storageNote {
+    margin-top: .7rem;
+  }
+
+  .csvPanel {
+    padding: .95rem 1.1rem;
+  }
+
+  .csvPanel h2 {
+    font-size: 1rem;
+  }
+
+  .csvPanel p {
+    font-size: .76rem;
+  }
+
+  .csvActions {
+    gap: .45rem;
+  }
+
+  .secondaryButton,
+  .importButton {
+    min-height: 36px;
+    padding: .55rem .75rem;
+    font-size: .76rem;
+  }
+}
+
+/* =========================================================
+   PERFORMANCE TABLE DESKTOP FIT V2
+   Show the complete ranking table without horizontal scroll
+   ========================================================= */
+
+@media (min-width: 901px) {
+  .tableWrap {
+    width: 100%;
+    overflow-x: visible;
+  }
+
+  .tableWrap table {
+    width: 100%;
+    min-width: 0 !important;
+    table-layout: fixed;
+  }
+
+  .tableWrap th,
+  .tableWrap td {
+    padding: .62rem .38rem;
+    font-size: .72rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .tableWrap th {
+    font-size: .61rem;
+    line-height: 1.2;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+  }
+
+  .tableWrap td {
+    white-space: nowrap;
+  }
+
+  /* Rank */
+  .tableWrap th:nth-child(1),
+  .tableWrap td:nth-child(1) {
+    width: 5%;
+  }
+
+  /* Student */
+  .tableWrap th:nth-child(2),
+  .tableWrap td:nth-child(2) {
+    width: 13%;
+  }
+
+  /* Grade / Section */
+  .tableWrap th:nth-child(3),
+  .tableWrap td:nth-child(3) {
+    width: 12%;
+  }
+
+  /* Filipino */
+  .tableWrap th:nth-child(4),
+  .tableWrap td:nth-child(4) {
+    width: 7%;
+  }
+
+  /* English */
+  .tableWrap th:nth-child(5),
+  .tableWrap td:nth-child(5) {
+    width: 7%;
+  }
+
+  /* Mathematics */
+  .tableWrap th:nth-child(6),
+  .tableWrap td:nth-child(6) {
+    width: 9%;
+  }
+
+  /* Science */
+  .tableWrap th:nth-child(7),
+  .tableWrap td:nth-child(7) {
+    width: 7%;
+  }
+
+  /* Araling Panlipunan */
+  .tableWrap th:nth-child(8),
+  .tableWrap td:nth-child(8) {
+    width: 11%;
+  }
+
+  /* MAPEH */
+  .tableWrap th:nth-child(9),
+  .tableWrap td:nth-child(9) {
+    width: 7%;
+  }
+
+  /* GMRC / EsP */
+  .tableWrap th:nth-child(10),
+  .tableWrap td:nth-child(10) {
+    width: 7%;
+  }
+
+  /* Average */
+  .tableWrap th:nth-child(11),
+  .tableWrap td:nth-child(11) {
+    width: 7%;
+    text-align: center;
+  }
+
+  /* Delete */
+  .tableWrap th:nth-child(12),
+  .tableWrap td:nth-child(12) {
+    width: 8%;
+    text-align: center;
+  }
+
+  .deleteButton {
+    padding: .32rem .45rem;
+    font-size: .68rem;
+  }
+
+  .average {
+    padding: .25rem .42rem;
+    font-size: .68rem;
+  }
+
+  .tableToolbar {
+    align-items: center;
+  }
+
+  .dangerButton {
+    min-width: 72px;
+    white-space: nowrap;
+  }
+}
+
+/* Mobile/tablet still scroll horizontally when needed */
+@media (max-width: 900px) {
+  .tableWrap {
+    overflow-x: auto;
+  }
+
+  .tableWrap table {
+    min-width: 1180px;
+  }
+}
+
+/* =========================================================
+   PERFORMANCE TABLE DESKTOP FIT V3
+   Full 12-column desktop visibility
+   ========================================================= */
+
+@media (min-width: 901px) {
+  .tableCard {
+    padding-left: .9rem !important;
+    padding-right: .9rem !important;
+  }
+
+  .tableWrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    margin-top: .55rem !important;
+  }
+
+  .tableWrap table {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    table-layout: fixed !important;
+  }
+
+  .tableWrap th,
+  .tableWrap td {
+    padding: .55rem .22rem !important;
+    font-size: .67rem !important;
+    line-height: 1.2 !important;
+    vertical-align: middle;
+  }
+
+  .tableWrap th {
+    font-size: .56rem !important;
+    font-weight: 800;
+    letter-spacing: 0 !important;
+    white-space: normal !important;
+    word-break: normal;
+    overflow: visible !important;
+    text-overflow: clip !important;
+  }
+
+  .tableWrap td {
+    white-space: nowrap !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Rank */
+  .tableWrap th:nth-child(1),
+  .tableWrap td:nth-child(1) {
+    width: 4% !important;
+    text-align: center;
+  }
+
+  /* Student */
+  .tableWrap th:nth-child(2),
+  .tableWrap td:nth-child(2) {
+    width: 12% !important;
+    text-align: left;
+  }
+
+  /* Grade / Section */
+  .tableWrap th:nth-child(3),
+  .tableWrap td:nth-child(3) {
+    width: 11% !important;
+  }
+
+  /* Filipino */
+  .tableWrap th:nth-child(4),
+  .tableWrap td:nth-child(4) {
+    width: 6.5% !important;
+    text-align: center;
+  }
+
+  /* English */
+  .tableWrap th:nth-child(5),
+  .tableWrap td:nth-child(5) {
+    width: 6.5% !important;
+    text-align: center;
+  }
+
+  /* Mathematics */
+  .tableWrap th:nth-child(6),
+  .tableWrap td:nth-child(6) {
+    width: 8% !important;
+    text-align: center;
+  }
+
+  /* Science */
+  .tableWrap th:nth-child(7),
+  .tableWrap td:nth-child(7) {
+    width: 6.5% !important;
+    text-align: center;
+  }
+
+  /* Araling Panlipunan */
+  .tableWrap th:nth-child(8),
+  .tableWrap td:nth-child(8) {
+    width: 11% !important;
+    text-align: center;
+  }
+
+  /* MAPEH */
+  .tableWrap th:nth-child(9),
+  .tableWrap td:nth-child(9) {
+    width: 6.5% !important;
+    text-align: center;
+  }
+
+  /* GMRC / EsP */
+  .tableWrap th:nth-child(10),
+  .tableWrap td:nth-child(10) {
+    width: 7% !important;
+    text-align: center;
+  }
+
+  /* Average */
+  .tableWrap th:nth-child(11),
+  .tableWrap td:nth-child(11) {
+    width: 7% !important;
+    text-align: center;
+  }
+
+  /* Delete */
+  .tableWrap th:nth-child(12),
+  .tableWrap td:nth-child(12) {
+    width: 7% !important;
+    text-align: center;
+  }
+
+  .tableWrap td:nth-child(2) strong {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .average {
+    display: inline-flex;
+    justify-content: center;
+    min-width: 42px;
+    padding: .22rem .35rem !important;
+    font-size: .64rem !important;
+  }
+
+  .deleteButton {
+    padding: .25rem .35rem !important;
+    font-size: .62rem !important;
+    white-space: nowrap;
+  }
+
+  .tableToolbar {
+    gap: .7rem;
+  }
+
+  .toolbarActions {
+    flex-shrink: 0;
+  }
+
+  .search {
+    width: 260px !important;
+    min-width: 260px !important;
+  }
+
+  .dangerButton {
+    width: 68px;
+    min-width: 68px !important;
+    padding-left: .4rem !important;
+    padding-right: .4rem !important;
+  }
+}
+
+@media (min-width: 901px) {
+  .dangerButton {
+    width: 60px !important;
+    min-width: 60px !important;
+    min-height: 34px !important;
+    padding: .35rem .3rem !important;
+    font-size: .64rem !important;
+    line-height: 1.05 !important;
+    border-radius: 9px !important;
+  }
+}

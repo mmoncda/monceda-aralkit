@@ -3,10 +3,8 @@
 import { useState } from "react";
 
 import {
-  COVER_TEMPLATES,
   normalizeCover,
   type CoverFields,
-  type CoverTemplate,
 } from "@/lib/cover/cover";
 
 const initialFields: CoverFields = {
@@ -19,6 +17,82 @@ const initialFields: CoverFields = {
   date: "",
 };
 
+
+const COVER_CHOICES = [
+  {
+    id: "classic",
+    name: "Classic Academic",
+    icon: "🎓",
+    category: "Academic",
+  },
+  {
+    id: "modern",
+    name: "Modern Blue",
+    icon: "📘",
+    category: "Academic",
+  },
+  {
+    id: "minimal",
+    name: "Minimal Clean",
+    icon: "◻️",
+    category: "Formal",
+  },
+  {
+    id: "science",
+    name: "Science Lab",
+    icon: "🔬",
+    category: "Subject",
+  },
+  {
+    id: "math",
+    name: "Math Grid",
+    icon: "📐",
+    category: "Subject",
+  },
+  {
+    id: "english",
+    name: "English Literature",
+    icon: "📖",
+    category: "Subject",
+  },
+  {
+    id: "filipino",
+    name: "Filipino Heritage",
+    icon: "🇵🇭",
+    category: "Subject",
+  },
+  {
+    id: "ap",
+    name: "Araling Panlipunan",
+    icon: "🏛️",
+    category: "Subject",
+  },
+  {
+    id: "ict",
+    name: "ICT / Computer",
+    icon: "💻",
+    category: "Subject",
+  },
+  {
+    id: "arts",
+    name: "Creative Arts",
+    icon: "🎨",
+    category: "Creative",
+  },
+  {
+    id: "research",
+    name: "Research Paper",
+    icon: "📑",
+    category: "Formal",
+  },
+  {
+    id: "portfolio",
+    name: "Student Portfolio",
+    icon: "🗂️",
+    category: "Creative",
+  },
+] as const;
+
 export default function CoverMaker() {
   const [fields, setFields] =
     useState<CoverFields>({
@@ -26,7 +100,7 @@ export default function CoverMaker() {
     });
 
   const [template, setTemplate] =
-    useState<CoverTemplate>("classic");
+    useState("classic");
 
   const cover = normalizeCover(fields);
 
@@ -73,7 +147,7 @@ export default function CoverMaker() {
           </h2>
 
           <div className="cover-templates">
-            {COVER_TEMPLATES.map(
+            {COVER_CHOICES.map(
               (item) => (
                 <button
                   type="button"
@@ -90,7 +164,14 @@ export default function CoverMaker() {
                     setTemplate(item.id)
                   }
                 >
-                  {item.name}
+                  <span className="cover-template-icon">
+                    {item.icon}
+                  </span>
+
+                  <span className="cover-template-copy">
+                    <strong>{item.name}</strong>
+                    <small>{item.category}</small>
+                  </span>
                 </button>
               )
             )}

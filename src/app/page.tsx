@@ -29,6 +29,20 @@ const tools = [
     href: "/tools/cover-maker/",
     status: "Available",
   },
+  {
+    icon: "🏆",
+    name: "Student Performance",
+    description: "Track grades, averages, and student rankings.",
+    href: "/performance/",
+    status: "New",
+  },
+  {
+    icon: "📅",
+    name: "Attendance Tracker",
+    description: "Track present, absent, and late records.",
+    href: "/attendance/",
+    status: "New",
+  },
 ];
 
 export default function Home() {
