@@ -43,6 +43,13 @@ const tools = [
     href: "/attendance/",
     status: "New",
   },
+  {
+    icon: "🗓️",
+    name: "Class Schedule Maker",
+    description: "Build and print your weekly class schedule.",
+    href: "/schedule/",
+    status: "New",
+  },
 ];
 
 export default function Home() {

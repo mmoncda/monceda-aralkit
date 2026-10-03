@@ -1,0 +1,698 @@
+.page {
+  display: grid;
+  gap: 1rem;
+  padding-bottom: 3rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 24px;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(59, 130, 246, 0.14),
+      transparent 35%
+    ),
+    linear-gradient(135deg, #ffffff, #f8fbff);
+}
+
+.hero h1 {
+  margin: .35rem 0 .6rem;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  line-height: 1;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: 0;
+  color: #64748b;
+  line-height: 1.65;
+}
+
+.eyebrow,
+.miniLabel {
+  color: #2563eb;
+  font-size: .74rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .75rem;
+}
+
+.stats article,
+.formCard,
+.scheduleCard {
+  border: 1px solid rgba(15, 23, 42, .08);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, .05);
+}
+
+.stats article {
+  display: grid;
+  gap: .25rem;
+  min-height: 78px;
+  padding: .9rem 1rem;
+}
+
+.stats span {
+  color: #64748b;
+  font-size: .82rem;
+}
+
+.stats strong {
+  font-size: 1.55rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns:
+    minmax(280px, .55fr)
+    minmax(0, 1.45fr);
+  gap: .85rem;
+  align-items: start;
+}
+
+.formCard,
+.scheduleCard {
+  padding: 1.1rem 1.15rem;
+  border-radius: 18px;
+}
+
+.formCard {
+  display: grid;
+  gap: .8rem;
+}
+
+.cardHeader h2,
+.scheduleHeader h2 {
+  margin: .15rem 0 0;
+}
+
+.formCard label {
+  display: grid;
+  gap: .3rem;
+  color: #334155;
+  font-size: .76rem;
+  font-weight: 700;
+}
+
+.formCard input,
+.formCard select {
+  width: 100%;
+  min-height: 38px;
+  box-sizing: border-box;
+  border: 1px solid #dbe3ef;
+  border-radius: 10px;
+  background: #fff;
+  padding: .58rem .72rem;
+  color: #0f172a;
+  font: inherit;
+  outline: none;
+}
+
+.formCard input:focus,
+.formCard select:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, .1);
+}
+
+.twoColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .7rem;
+}
+
+.primaryButton,
+.dangerButton,
+.printButton,
+.deleteButton {
+  border: 0;
+  border-radius: 11px;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.primaryButton {
+  min-height: 40px;
+  padding: .6rem .9rem;
+  background: #2563eb;
+  color: #fff;
+}
+
+.dangerButton {
+  min-height: 40px;
+  padding: .6rem .9rem;
+  background: #fff1f2;
+  color: #be123c;
+}
+
+.printButton {
+  flex: 0 0 auto;
+  min-height: 42px;
+  padding: .7rem 1rem;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.primaryButton:disabled,
+.dangerButton:disabled,
+.printButton:disabled {
+  opacity: .45;
+  cursor: default;
+}
+
+.storageNote {
+  margin: 0;
+  color: #94a3b8;
+  font-size: .72rem;
+  text-align: center;
+}
+
+.scheduleHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: .9rem;
+}
+
+.classCount {
+  border-radius: 999px;
+  background: #eff6ff;
+  padding: .4rem .65rem;
+  color: #1d4ed8;
+  font-size: .72rem;
+  font-weight: 800;
+}
+
+.days {
+  display: grid;
+  gap: .75rem;
+}
+
+.dayBlock {
+  overflow: hidden;
+  border: 1px solid #e8edf5;
+  border-radius: 14px;
+}
+
+.dayTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .65rem .8rem;
+  background: #f8fafc;
+}
+
+.dayTitle strong {
+  font-size: .84rem;
+}
+
+.dayTitle span {
+  display: grid;
+  place-items: center;
+  min-width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: #e0ecff;
+  color: #1d4ed8;
+  font-size: .68rem;
+  font-weight: 900;
+}
+
+.classList {
+  display: grid;
+}
+
+.classRow {
+  display: grid;
+  grid-template-columns:
+    minmax(130px, .38fr)
+    minmax(0, 1fr)
+    auto;
+  gap: .75rem;
+  align-items: center;
+  padding: .7rem .8rem;
+  border-top: 1px solid #eef2f7;
+}
+
+.classRow:first-child {
+  border-top: 0;
+}
+
+.time,
+.subject {
+  display: grid;
+  gap: .12rem;
+  min-width: 0;
+}
+
+.time strong,
+.subject strong {
+  color: #0f172a;
+  font-size: .8rem;
+}
+
+.time span,
+.subject span {
+  overflow: hidden;
+  color: #64748b;
+  font-size: .7rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.deleteButton {
+  padding: .4rem .55rem;
+  background: transparent;
+  color: #e11d48;
+  font-size: .7rem;
+}
+
+.noClasses {
+  padding: .8rem;
+  border-top: 1px solid #eef2f7;
+  color: #94a3b8;
+  font-size: .74rem;
+}
+
+.emptyState {
+  display: grid;
+  gap: .35rem;
+  min-height: 300px;
+  place-content: center;
+  border: 1px dashed #cbd5e1;
+  border-radius: 14px;
+  padding: 2rem 1rem;
+  color: #64748b;
+  text-align: center;
+}
+
+.emptyState strong {
+  color: #334155;
+}
+
+.emptyState p {
+  max-width: 360px;
+  margin: 0;
+  font-size: .82rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 1.35rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .twoColumns {
+    grid-template-columns: 1fr;
+  }
+
+  .scheduleHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .classRow {
+    grid-template-columns: 1fr auto;
+  }
+
+  .time {
+    grid-column: 1 / 2;
+  }
+
+  .subject {
+    grid-column: 1 / 2;
+  }
+
+  .deleteButton {
+    grid-column: 2;
+    grid-row: 1 / 3;
+  }
+}
+
+@media print {
+  .formCard,
+  .printButton,
+  .deleteButton {
+    display: none !important;
+  }
+
+  .page {
+    display: block;
+    padding: 0;
+  }
+
+  .hero {
+    padding: 0 0 1rem;
+    border: 0;
+    box-shadow: none;
+    background: none;
+  }
+
+  .hero p,
+  .eyebrow {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .stats {
+    margin-bottom: 1rem;
+  }
+
+  .stats article,
+  .scheduleCard {
+    box-shadow: none;
+  }
+
+  .layout {
+    display: block;
+  }
+
+  .scheduleCard {
+    border: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .dayBlock {
+    break-inside: avoid;
+  }
+}
+
+
+/* =========================================================
+   ARALKIT CLASS SCHEDULE MAKER — POLISH V2
+   Desktop density + timetable refinement
+   ========================================================= */
+
+@media (min-width: 901px) {
+  .page {
+    gap: .8rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero {
+    min-height: 150px;
+    padding: 1.55rem 1.8rem;
+    border-radius: 20px;
+  }
+
+  .hero h1 {
+    margin: .28rem 0 .45rem;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    letter-spacing: -.035em;
+  }
+
+  .hero p {
+    max-width: 760px;
+    font-size: .9rem;
+    line-height: 1.55;
+  }
+
+  .printButton {
+    min-width: 145px;
+    min-height: 40px;
+    padding: .6rem .9rem;
+  }
+
+  .stats {
+    gap: .65rem;
+  }
+
+  .stats article {
+    min-height: 68px;
+    padding: .78rem .95rem;
+    border-radius: 16px;
+  }
+
+  .stats span {
+    font-size: .74rem;
+  }
+
+  .stats strong {
+    font-size: 1.38rem;
+  }
+
+  .layout {
+    grid-template-columns:
+      minmax(255px, .48fr)
+      minmax(0, 1.52fr);
+    gap: .75rem;
+  }
+
+  .formCard,
+  .scheduleCard {
+    border-radius: 17px;
+  }
+
+  .formCard {
+    gap: .68rem;
+    padding: 1rem;
+  }
+
+  .formCard label {
+    gap: .25rem;
+    font-size: .72rem;
+  }
+
+  .formCard input,
+  .formCard select {
+    min-height: 36px;
+    padding: .5rem .65rem;
+    font-size: .8rem;
+  }
+
+  .twoColumns {
+    gap: .55rem;
+  }
+
+  .primaryButton,
+  .dangerButton {
+    min-height: 37px;
+    padding: .52rem .75rem;
+    font-size: .78rem;
+  }
+
+  .storageNote {
+    font-size: .67rem;
+  }
+
+  .scheduleCard {
+    min-height: 470px;
+    padding: 1rem 1.05rem 1.05rem;
+  }
+
+  .scheduleHeader {
+    margin-bottom: .7rem;
+  }
+
+  .scheduleHeader h2 {
+    font-size: 1.05rem;
+  }
+
+  .classCount {
+    padding: .34rem .58rem;
+    font-size: .67rem;
+  }
+
+  .days {
+    gap: .55rem;
+  }
+
+  .dayBlock {
+    border-radius: 12px;
+  }
+
+  .dayTitle {
+    min-height: 38px;
+    padding: .48rem .7rem;
+  }
+
+  .dayTitle strong {
+    font-size: .78rem;
+  }
+
+  .dayTitle span {
+    min-width: 21px;
+    height: 21px;
+    font-size: .62rem;
+  }
+
+  .classRow {
+    min-height: 48px;
+    grid-template-columns:
+      minmax(120px, .32fr)
+      minmax(0, 1fr)
+      auto;
+    padding: .5rem .7rem;
+  }
+
+  .time strong,
+  .subject strong {
+    font-size: .76rem;
+  }
+
+  .time span,
+  .subject span {
+    font-size: .66rem;
+  }
+
+  .deleteButton {
+    padding: .35rem .48rem;
+    font-size: .64rem;
+  }
+
+  .noClasses {
+    min-height: 34px;
+    display: flex;
+    align-items: center;
+    padding: .45rem .7rem;
+    font-size: .68rem;
+  }
+
+  .emptyState {
+    min-height: 385px;
+    background:
+      linear-gradient(
+        rgba(248,250,252,.72),
+        rgba(255,255,255,.9)
+      ),
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 47px,
+        rgba(226,232,240,.45) 48px
+      );
+  }
+
+  .emptyState strong {
+    font-size: .9rem;
+  }
+
+  .emptyState p {
+    font-size: .75rem;
+  }
+}
+
+/* Subtle timetable identity */
+.dayBlock:nth-child(1) .dayTitle {
+  border-left: 3px solid #3b82f6;
+}
+
+.dayBlock:nth-child(2) .dayTitle {
+  border-left: 3px solid #6366f1;
+}
+
+.dayBlock:nth-child(3) .dayTitle {
+  border-left: 3px solid #8b5cf6;
+}
+
+.dayBlock:nth-child(4) .dayTitle {
+  border-left: 3px solid #0ea5e9;
+}
+
+.dayBlock:nth-child(5) .dayTitle {
+  border-left: 3px solid #14b8a6;
+}
+
+.classRow:hover {
+  background: #fbfdff;
+}
+
+.primaryButton {
+  transition:
+    transform .15s ease,
+    box-shadow .15s ease,
+    background .15s ease;
+}
+
+.primaryButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(37,99,235,.18);
+}
+
+.scheduleCard,
+.formCard,
+.stats article {
+  transition:
+    box-shadow .18s ease,
+    border-color .18s ease;
+}
+
+@media (max-width: 600px) {
+  .page {
+    gap: .75rem;
+  }
+
+  .hero {
+    border-radius: 18px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .stats {
+    gap: .55rem;
+  }
+
+  .stats article {
+    min-height: 64px;
+    padding: .75rem .85rem;
+  }
+
+  .formCard,
+  .scheduleCard {
+    padding: .95rem;
+    border-radius: 16px;
+  }
+
+  .scheduleCard {
+    min-height: 360px;
+  }
+
+  .days {
+    gap: .55rem;
+  }
+
+  .dayTitle {
+    padding: .55rem .65rem;
+  }
+
+  .classRow {
+    padding: .65rem;
+  }
+
+  .emptyState {
+    min-height: 260px;
+  }
+}
